@@ -1,13 +1,18 @@
 # Analiza podatkov s programom R, 2015/16
-
+## Analiza razvez zakonskih zvez v Sloveniji
 Avtor: Marina Sirk
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal. Tukaj boste
-napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+V projektu bom analizirala podatke razvez zakonskih zvez od leta 2003 do 2014 glede na regije.Podatke sem dobila s Statističnega urada RS. Prva tabela (v obliki CSV) vsebuje podatke o trajanju zakonske zveze, druga tabela (v obliki XML) pa o številu vzdrževanih otrok.
+
+Povezavi do tabel:
+* http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=05M4008S&ti=&path=../Database/Dem_soc/05_prebivalstvo/36_Razveze/10_05M40_razveze-RE-OBC/&lang=2
+* http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=05M4010S&ti=&path=../Database/Dem_soc/05_prebivalstvo/36_Razveze/10_05M40_razveze-RE-OBC/&lang=2
+
+Moj cilj je ugotoviti, kako na razveze vpliva trajanje zakonskih zvez in število otrok ter kje so ločitve najpogostejše.
 
 ## Program
 
