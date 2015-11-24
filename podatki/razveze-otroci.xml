@@ -8,7 +8,7 @@
 
 -<tabletitle xml:lang="sl">
 
-<tablemaintitle>Razveze po: STATISTIÈNA REGIJA, LETO , VZDREVANI OTROCI</tablemaintitle>
+<tablemaintitle>Razveze po: STATISTIÈNA REGIJA, VZDREVANI OTROCI , LETO</tablemaintitle>
 
 </tabletitle>
 
@@ -158,14 +158,14 @@
 
 <pxvariable procmetaId="pxvar1"> </pxvariable>
 
+<pxvariable procmetaId="pxvar2"> </pxvariable>
 
--<pxvariable procmetaId="pxvar2">
 
-<timeval frequency="A">2003</timeval>
+-<pxvariable procmetaId="pxvar3">
+
+<timeval frequency="A">2008</timeval>
 
 </pxvariable>
-
-<pxvariable procmetaId="pxvar3"> </pxvariable>
 
 </pxmeta>
 
@@ -218,7 +218,7 @@
 
 -<variablenamegrp>
 
-<variablename xml:lang="sl">LETO</variablename>
+<variablename xml:lang="sl">VZDREVANI OTROCI</variablename>
 
 </variablenamegrp>
 
@@ -230,7 +230,7 @@
 
 -<variablenamegrp>
 
-<variablename xml:lang="sl">VZDREVANI OTROCI</variablename>
+<variablename xml:lang="sl">LETO</variablename>
 
 </variablenamegrp>
 
@@ -372,95 +372,46 @@
 
 -<name>
 
-<textlang xml:lang="sl">LETO</textlang>
+<textlang xml:lang="sl">VZDREVANI OTROCI</textlang>
 
 </name>
 
 
 -<value valueId="var2val1">
 
-<textlang xml:lang="sl">2003</textlang>
+<textlang xml:lang="sl">Brez otrok</textlang>
 
 </value>
 
 
 -<value valueId="var2val2">
 
-<textlang xml:lang="sl">2004</textlang>
+<textlang xml:lang="sl">Eden</textlang>
 
 </value>
 
 
 -<value valueId="var2val3">
 
-<textlang xml:lang="sl">2005</textlang>
+<textlang xml:lang="sl">Dva</textlang>
 
 </value>
 
 
 -<value valueId="var2val4">
 
-<textlang xml:lang="sl">2006</textlang>
+<textlang xml:lang="sl">Trije</textlang>
 
 </value>
 
 
 -<value valueId="var2val5">
 
-<textlang xml:lang="sl">2007</textlang>
+<textlang xml:lang="sl">tirje ali veè</textlang>
 
 </value>
 
-
--<value valueId="var2val6">
-
-<textlang xml:lang="sl">2008</textlang>
-
-</value>
-
-
--<value valueId="var2val7">
-
-<textlang xml:lang="sl">2009</textlang>
-
-</value>
-
-
--<value valueId="var2val8">
-
-<textlang xml:lang="sl">2010</textlang>
-
-</value>
-
-
--<value valueId="var2val9">
-
-<textlang xml:lang="sl">2011</textlang>
-
-</value>
-
-
--<value valueId="var2val10">
-
-<textlang xml:lang="sl">2012</textlang>
-
-</value>
-
-
--<value valueId="var2val11">
-
-<textlang xml:lang="sl">2013</textlang>
-
-</value>
-
-
--<value valueId="var2val12">
-
-<textlang xml:lang="sl">2014</textlang>
-
-</value>
-
-<valueList>2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014</valueList>
+<valueList>1,2,3,4,5</valueList>
 
 </axis>
 
@@ -470,46 +421,60 @@
 
 -<name>
 
-<textlang xml:lang="sl">VZDREVANI OTROCI</textlang>
+<textlang xml:lang="sl">LETO</textlang>
 
 </name>
 
 
 -<value valueId="var3val1">
 
-<textlang xml:lang="sl">Brez otrok</textlang>
+<textlang xml:lang="sl">2008</textlang>
 
 </value>
 
 
 -<value valueId="var3val2">
 
-<textlang xml:lang="sl">Eden</textlang>
+<textlang xml:lang="sl">2009</textlang>
 
 </value>
 
 
 -<value valueId="var3val3">
 
-<textlang xml:lang="sl">Dva</textlang>
+<textlang xml:lang="sl">2010</textlang>
 
 </value>
 
 
 -<value valueId="var3val4">
 
-<textlang xml:lang="sl">Trije</textlang>
+<textlang xml:lang="sl">2011</textlang>
 
 </value>
 
 
 -<value valueId="var3val5">
 
-<textlang xml:lang="sl">tirje ali veè</textlang>
+<textlang xml:lang="sl">2012</textlang>
 
 </value>
 
-<valueList>1,2,3,4,5</valueList>
+
+-<value valueId="var3val6">
+
+<textlang xml:lang="sl">2013</textlang>
+
+</value>
+
+
+-<value valueId="var3val7">
+
+<textlang xml:lang="sl">2014</textlang>
+
+</value>
+
+<valueList>2008,2009,2010,2011,2012,2013,2014</valueList>
 
 </axis>
 
@@ -540,1267 +505,761 @@
 
 -<data>
 
-<cell cellIdRefs="var1val1 var2val1 var3val1">57</cell>
+<cell cellIdRefs="var1val1 var2val1 var3val1">56</cell>
 
 <cell cellIdRefs="var1val1 var2val1 var3val2">41</cell>
 
-<cell cellIdRefs="var1val1 var2val1 var3val3">22</cell>
+<cell cellIdRefs="var1val1 var2val1 var3val3">53</cell>
 
-<cell cellIdRefs="var1val1 var2val1 var3val4">2</cell>
+<cell cellIdRefs="var1val1 var2val1 var3val4">58</cell>
 
-<cell cellIdRefs="var1val1 var2val2 var3val1">55</cell>
+<cell cellIdRefs="var1val1 var2val1 var3val5">57</cell>
 
-<cell cellIdRefs="var1val1 var2val2 var3val2">35</cell>
+<cell cellIdRefs="var1val1 var2val1 var3val6">32</cell>
 
-<cell cellIdRefs="var1val1 var2val2 var3val3">15</cell>
+<cell cellIdRefs="var1val1 var2val1 var3val7">62</cell>
 
-<cell cellIdRefs="var1val1 var2val2 var3val4">4</cell>
+<cell cellIdRefs="var1val1 var2val2 var3val1">37</cell>
 
-<cell cellIdRefs="var1val1 var2val3 var3val1">44</cell>
+<cell cellIdRefs="var1val1 var2val2 var3val2">46</cell>
 
-<cell cellIdRefs="var1val1 var2val3 var3val2">38</cell>
+<cell cellIdRefs="var1val1 var2val2 var3val3">34</cell>
 
-<cell cellIdRefs="var1val1 var2val3 var3val3">29</cell>
+<cell cellIdRefs="var1val1 var2val2 var3val4">40</cell>
 
-<cell cellIdRefs="var1val1 var2val3 var3val4">4</cell>
+<cell cellIdRefs="var1val1 var2val2 var3val5">26</cell>
 
-<cell cellIdRefs="var1val1 var2val4 var3val1">51</cell>
+<cell cellIdRefs="var1val1 var2val2 var3val6">47</cell>
 
-<cell cellIdRefs="var1val1 var2val4 var3val2">54</cell>
+<cell cellIdRefs="var1val1 var2val2 var3val7">38</cell>
 
-<cell cellIdRefs="var1val1 var2val4 var3val3">25</cell>
+<cell cellIdRefs="var1val1 var2val3 var3val1">31</cell>
+
+<cell cellIdRefs="var1val1 var2val3 var3val2">28</cell>
+
+<cell cellIdRefs="var1val1 var2val3 var3val3">35</cell>
+
+<cell cellIdRefs="var1val1 var2val3 var3val4">22</cell>
+
+<cell cellIdRefs="var1val1 var2val3 var3val5">21</cell>
+
+<cell cellIdRefs="var1val1 var2val3 var3val6">35</cell>
+
+<cell cellIdRefs="var1val1 var2val3 var3val7">22</cell>
+
+<cell cellIdRefs="var1val1 var2val4 var3val1">4</cell>
+
+<cell cellIdRefs="var1val1 var2val4 var3val2">5</cell>
+
+<cell cellIdRefs="var1val1 var2val4 var3val3">10</cell>
 
 <cell cellIdRefs="var1val1 var2val4 var3val4">2</cell>
 
-<cell cellIdRefs="var1val1 var2val5 var3val1">52</cell>
+<cell cellIdRefs="var1val1 var2val4 var3val5">3</cell>
 
-<cell cellIdRefs="var1val1 var2val5 var3val2">39</cell>
+<cell cellIdRefs="var1val1 var2val4 var3val6">9</cell>
 
-<cell cellIdRefs="var1val1 var2val5 var3val3">17</cell>
+<cell cellIdRefs="var1val1 var2val4 var3val7">3</cell>
 
-<cell cellIdRefs="var1val1 var2val5 var3val4">5</cell>
+<cell cellIdRefs="var1val1 var2val5 var3val1">1</cell>
 
-<cell cellIdRefs="var1val1 var2val6 var3val1">56</cell>
+<cell cellIdRefs="var1val1 var2val5 var3val2">1</cell>
 
-<cell cellIdRefs="var1val1 var2val6 var3val2">37</cell>
+<cell cellIdRefs="var1val1 var2val5 var3val3">1</cell>
 
-<cell cellIdRefs="var1val1 var2val6 var3val3">31</cell>
+<cell cellIdRefs="var1val1 var2val5 var3val4">1</cell>
 
-<cell cellIdRefs="var1val1 var2val6 var3val4">4</cell>
+<cell cellIdRefs="var1val1 var2val5 var3val5">2</cell>
 
-<cell cellIdRefs="var1val1 var2val6 var3val5">1</cell>
+<cell cellIdRefs="var1val1 var2val5 var3val6">2</cell>
 
-<cell cellIdRefs="var1val1 var2val7 var3val1">41</cell>
+<cell cellIdRefs="var1val2 var2val1 var3val1">159</cell>
 
-<cell cellIdRefs="var1val1 var2val7 var3val2">46</cell>
+<cell cellIdRefs="var1val2 var2val1 var3val2">167</cell>
 
-<cell cellIdRefs="var1val1 var2val7 var3val3">28</cell>
+<cell cellIdRefs="var1val2 var2val1 var3val3">199</cell>
 
-<cell cellIdRefs="var1val1 var2val7 var3val4">5</cell>
+<cell cellIdRefs="var1val2 var2val1 var3val4">185</cell>
 
-<cell cellIdRefs="var1val1 var2val7 var3val5">1</cell>
+<cell cellIdRefs="var1val2 var2val1 var3val5">220</cell>
 
-<cell cellIdRefs="var1val1 var2val8 var3val1">53</cell>
+<cell cellIdRefs="var1val2 var2val1 var3val6">147</cell>
 
-<cell cellIdRefs="var1val1 var2val8 var3val2">34</cell>
+<cell cellIdRefs="var1val2 var2val1 var3val7">228</cell>
 
-<cell cellIdRefs="var1val1 var2val8 var3val3">35</cell>
+<cell cellIdRefs="var1val2 var2val2 var3val1">123</cell>
 
-<cell cellIdRefs="var1val1 var2val8 var3val4">10</cell>
+<cell cellIdRefs="var1val2 var2val2 var3val2">130</cell>
 
-<cell cellIdRefs="var1val1 var2val8 var3val5">1</cell>
+<cell cellIdRefs="var1val2 var2val2 var3val3">102</cell>
 
-<cell cellIdRefs="var1val1 var2val9 var3val1">58</cell>
+<cell cellIdRefs="var1val2 var2val2 var3val4">101</cell>
 
-<cell cellIdRefs="var1val1 var2val9 var3val2">40</cell>
+<cell cellIdRefs="var1val2 var2val2 var3val5">92</cell>
 
-<cell cellIdRefs="var1val1 var2val9 var3val3">22</cell>
+<cell cellIdRefs="var1val2 var2val2 var3val6">98</cell>
 
-<cell cellIdRefs="var1val1 var2val9 var3val4">2</cell>
+<cell cellIdRefs="var1val2 var2val2 var3val7">99</cell>
 
-<cell cellIdRefs="var1val1 var2val9 var3val5">1</cell>
+<cell cellIdRefs="var1val2 var2val3 var3val1">78</cell>
 
-<cell cellIdRefs="var1val1 var2val10 var3val1">57</cell>
-
-<cell cellIdRefs="var1val1 var2val10 var3val2">26</cell>
-
-<cell cellIdRefs="var1val1 var2val10 var3val3">21</cell>
-
-<cell cellIdRefs="var1val1 var2val10 var3val4">3</cell>
-
-<cell cellIdRefs="var1val1 var2val10 var3val5">2</cell>
-
-<cell cellIdRefs="var1val1 var2val11 var3val1">32</cell>
-
-<cell cellIdRefs="var1val1 var2val11 var3val2">47</cell>
-
-<cell cellIdRefs="var1val1 var2val11 var3val3">35</cell>
-
-<cell cellIdRefs="var1val1 var2val11 var3val4">9</cell>
-
-<cell cellIdRefs="var1val1 var2val11 var3val5">2</cell>
-
-<cell cellIdRefs="var1val1 var2val12 var3val1">62</cell>
-
-<cell cellIdRefs="var1val1 var2val12 var3val2">38</cell>
-
-<cell cellIdRefs="var1val1 var2val12 var3val3">22</cell>
-
-<cell cellIdRefs="var1val1 var2val12 var3val4">3</cell>
-
-<cell cellIdRefs="var1val2 var2val1 var3val1">168</cell>
-
-<cell cellIdRefs="var1val2 var2val1 var3val2">135</cell>
-
-<cell cellIdRefs="var1val2 var2val1 var3val3">80</cell>
-
-<cell cellIdRefs="var1val2 var2val1 var3val4">8</cell>
-
-<cell cellIdRefs="var1val2 var2val2 var3val1">198</cell>
-
-<cell cellIdRefs="var1val2 var2val2 var3val2">129</cell>
-
-<cell cellIdRefs="var1val2 var2val2 var3val3">78</cell>
-
-<cell cellIdRefs="var1val2 var2val2 var3val4">8</cell>
-
-<cell cellIdRefs="var1val2 var2val2 var3val5">1</cell>
-
-<cell cellIdRefs="var1val2 var2val3 var3val1">215</cell>
-
-<cell cellIdRefs="var1val2 var2val3 var3val2">147</cell>
+<cell cellIdRefs="var1val2 var2val3 var3val2">81</cell>
 
 <cell cellIdRefs="var1val2 var2val3 var3val3">80</cell>
 
-<cell cellIdRefs="var1val2 var2val3 var3val4">8</cell>
+<cell cellIdRefs="var1val2 var2val3 var3val4">65</cell>
 
-<cell cellIdRefs="var1val2 var2val3 var3val5">3</cell>
+<cell cellIdRefs="var1val2 var2val3 var3val5">61</cell>
 
-<cell cellIdRefs="var1val2 var2val4 var3val1">189</cell>
+<cell cellIdRefs="var1val2 var2val3 var3val6">110</cell>
 
-<cell cellIdRefs="var1val2 var2val4 var3val2">113</cell>
+<cell cellIdRefs="var1val2 var2val3 var3val7">52</cell>
 
-<cell cellIdRefs="var1val2 var2val4 var3val3">94</cell>
+<cell cellIdRefs="var1val2 var2val4 var3val1">10</cell>
 
-<cell cellIdRefs="var1val2 var2val4 var3val4">7</cell>
+<cell cellIdRefs="var1val2 var2val4 var3val2">9</cell>
 
-<cell cellIdRefs="var1val2 var2val5 var3val1">177</cell>
+<cell cellIdRefs="var1val2 var2val4 var3val3">10</cell>
 
-<cell cellIdRefs="var1val2 var2val5 var3val2">119</cell>
+<cell cellIdRefs="var1val2 var2val4 var3val4">8</cell>
 
-<cell cellIdRefs="var1val2 var2val5 var3val3">69</cell>
+<cell cellIdRefs="var1val2 var2val4 var3val5">10</cell>
 
-<cell cellIdRefs="var1val2 var2val5 var3val4">6</cell>
+<cell cellIdRefs="var1val2 var2val4 var3val6">18</cell>
 
-<cell cellIdRefs="var1val2 var2val5 var3val5">3</cell>
+<cell cellIdRefs="var1val2 var2val4 var3val7">5</cell>
 
-<cell cellIdRefs="var1val2 var2val6 var3val1">159</cell>
+<cell cellIdRefs="var1val2 var2val5 var3val1">3</cell>
 
-<cell cellIdRefs="var1val2 var2val6 var3val2">123</cell>
+<cell cellIdRefs="var1val2 var2val5 var3val2">3</cell>
 
-<cell cellIdRefs="var1val2 var2val6 var3val3">78</cell>
+<cell cellIdRefs="var1val2 var2val5 var3val3">2</cell>
 
-<cell cellIdRefs="var1val2 var2val6 var3val4">10</cell>
+<cell cellIdRefs="var1val2 var2val5 var3val4">4</cell>
 
-<cell cellIdRefs="var1val2 var2val6 var3val5">3</cell>
+<cell cellIdRefs="var1val2 var2val5 var3val6">4</cell>
 
-<cell cellIdRefs="var1val2 var2val7 var3val1">167</cell>
+<cell cellIdRefs="var1val2 var2val5 var3val7">3</cell>
 
-<cell cellIdRefs="var1val2 var2val7 var3val2">130</cell>
+<cell cellIdRefs="var1val3 var2val1 var3val1">28</cell>
 
-<cell cellIdRefs="var1val2 var2val7 var3val3">81</cell>
+<cell cellIdRefs="var1val3 var2val1 var3val2">27</cell>
 
-<cell cellIdRefs="var1val2 var2val7 var3val4">9</cell>
+<cell cellIdRefs="var1val3 var2val1 var3val3">22</cell>
 
-<cell cellIdRefs="var1val2 var2val7 var3val5">3</cell>
+<cell cellIdRefs="var1val3 var2val1 var3val4">17</cell>
 
-<cell cellIdRefs="var1val2 var2val8 var3val1">199</cell>
+<cell cellIdRefs="var1val3 var2val1 var3val5">33</cell>
 
-<cell cellIdRefs="var1val2 var2val8 var3val2">102</cell>
+<cell cellIdRefs="var1val3 var2val1 var3val6">30</cell>
 
-<cell cellIdRefs="var1val2 var2val8 var3val3">80</cell>
+<cell cellIdRefs="var1val3 var2val1 var3val7">33</cell>
 
-<cell cellIdRefs="var1val2 var2val8 var3val4">10</cell>
+<cell cellIdRefs="var1val3 var2val2 var3val1">21</cell>
 
-<cell cellIdRefs="var1val2 var2val8 var3val5">2</cell>
+<cell cellIdRefs="var1val3 var2val2 var3val2">21</cell>
 
-<cell cellIdRefs="var1val2 var2val9 var3val1">185</cell>
+<cell cellIdRefs="var1val3 var2val2 var3val3">12</cell>
 
-<cell cellIdRefs="var1val2 var2val9 var3val2">101</cell>
+<cell cellIdRefs="var1val3 var2val2 var3val4">21</cell>
 
-<cell cellIdRefs="var1val2 var2val9 var3val3">65</cell>
+<cell cellIdRefs="var1val3 var2val2 var3val5">19</cell>
 
-<cell cellIdRefs="var1val2 var2val9 var3val4">8</cell>
+<cell cellIdRefs="var1val3 var2val2 var3val6">19</cell>
 
-<cell cellIdRefs="var1val2 var2val9 var3val5">4</cell>
+<cell cellIdRefs="var1val3 var2val2 var3val7">16</cell>
 
-<cell cellIdRefs="var1val2 var2val10 var3val1">220</cell>
+<cell cellIdRefs="var1val3 var2val3 var3val1">14</cell>
 
-<cell cellIdRefs="var1val2 var2val10 var3val2">92</cell>
+<cell cellIdRefs="var1val3 var2val3 var3val2">11</cell>
 
-<cell cellIdRefs="var1val2 var2val10 var3val3">61</cell>
+<cell cellIdRefs="var1val3 var2val3 var3val3">14</cell>
 
-<cell cellIdRefs="var1val2 var2val10 var3val4">10</cell>
+<cell cellIdRefs="var1val3 var2val3 var3val4">14</cell>
 
-<cell cellIdRefs="var1val2 var2val11 var3val1">147</cell>
+<cell cellIdRefs="var1val3 var2val3 var3val5">20</cell>
 
-<cell cellIdRefs="var1val2 var2val11 var3val2">98</cell>
+<cell cellIdRefs="var1val3 var2val3 var3val6">16</cell>
 
-<cell cellIdRefs="var1val2 var2val11 var3val3">110</cell>
+<cell cellIdRefs="var1val3 var2val3 var3val7">14</cell>
 
-<cell cellIdRefs="var1val2 var2val11 var3val4">18</cell>
+<cell cellIdRefs="var1val3 var2val4 var3val1">3</cell>
 
-<cell cellIdRefs="var1val2 var2val11 var3val5">4</cell>
+<cell cellIdRefs="var1val3 var2val4 var3val2">4</cell>
 
-<cell cellIdRefs="var1val2 var2val12 var3val1">228</cell>
-
-<cell cellIdRefs="var1val2 var2val12 var3val2">99</cell>
-
-<cell cellIdRefs="var1val2 var2val12 var3val3">52</cell>
-
-<cell cellIdRefs="var1val2 var2val12 var3val4">5</cell>
-
-<cell cellIdRefs="var1val2 var2val12 var3val5">3</cell>
-
-<cell cellIdRefs="var1val3 var2val1 var3val1">18</cell>
-
-<cell cellIdRefs="var1val3 var2val1 var3val2">26</cell>
-
-<cell cellIdRefs="var1val3 var2val1 var3val3">21</cell>
-
-<cell cellIdRefs="var1val3 var2val1 var3val4">3</cell>
-
-<cell cellIdRefs="var1val3 var2val2 var3val1">31</cell>
-
-<cell cellIdRefs="var1val3 var2val2 var3val2">24</cell>
-
-<cell cellIdRefs="var1val3 var2val2 var3val3">35</cell>
-
-<cell cellIdRefs="var1val3 var2val2 var3val4">2</cell>
-
-<cell cellIdRefs="var1val3 var2val3 var3val1">22</cell>
-
-<cell cellIdRefs="var1val3 var2val3 var3val2">19</cell>
-
-<cell cellIdRefs="var1val3 var2val3 var3val3">19</cell>
-
-<cell cellIdRefs="var1val3 var2val4 var3val1">30</cell>
-
-<cell cellIdRefs="var1val3 var2val4 var3val2">19</cell>
-
-<cell cellIdRefs="var1val3 var2val4 var3val3">11</cell>
+<cell cellIdRefs="var1val3 var2val4 var3val3">3</cell>
 
 <cell cellIdRefs="var1val3 var2val4 var3val4">1</cell>
 
-<cell cellIdRefs="var1val3 var2val5 var3val1">24</cell>
+<cell cellIdRefs="var1val3 var2val4 var3val5">5</cell>
 
-<cell cellIdRefs="var1val3 var2val5 var3val2">18</cell>
-
-<cell cellIdRefs="var1val3 var2val5 var3val3">23</cell>
+<cell cellIdRefs="var1val3 var2val4 var3val6">7</cell>
 
 <cell cellIdRefs="var1val3 var2val5 var3val4">1</cell>
 
-<cell cellIdRefs="var1val3 var2val6 var3val1">28</cell>
+<cell cellIdRefs="var1val3 var2val5 var3val5">1</cell>
 
-<cell cellIdRefs="var1val3 var2val6 var3val2">21</cell>
+<cell cellIdRefs="var1val3 var2val5 var3val7">1</cell>
 
-<cell cellIdRefs="var1val3 var2val6 var3val3">14</cell>
+<cell cellIdRefs="var1val4 var2val1 var3val1">125</cell>
 
-<cell cellIdRefs="var1val3 var2val6 var3val4">3</cell>
+<cell cellIdRefs="var1val4 var2val1 var3val2">131</cell>
 
-<cell cellIdRefs="var1val3 var2val7 var3val1">27</cell>
+<cell cellIdRefs="var1val4 var2val1 var3val3">148</cell>
 
-<cell cellIdRefs="var1val3 var2val7 var3val2">21</cell>
+<cell cellIdRefs="var1val4 var2val1 var3val4">120</cell>
 
-<cell cellIdRefs="var1val3 var2val7 var3val3">11</cell>
+<cell cellIdRefs="var1val4 var2val1 var3val5">139</cell>
 
-<cell cellIdRefs="var1val3 var2val7 var3val4">4</cell>
+<cell cellIdRefs="var1val4 var2val1 var3val6">91</cell>
 
-<cell cellIdRefs="var1val3 var2val8 var3val1">22</cell>
+<cell cellIdRefs="var1val4 var2val1 var3val7">135</cell>
 
-<cell cellIdRefs="var1val3 var2val8 var3val2">12</cell>
+<cell cellIdRefs="var1val4 var2val2 var3val1">95</cell>
 
-<cell cellIdRefs="var1val3 var2val8 var3val3">14</cell>
+<cell cellIdRefs="var1val4 var2val2 var3val2">83</cell>
 
-<cell cellIdRefs="var1val3 var2val8 var3val4">3</cell>
+<cell cellIdRefs="var1val4 var2val2 var3val3">98</cell>
 
-<cell cellIdRefs="var1val3 var2val9 var3val1">17</cell>
+<cell cellIdRefs="var1val4 var2val2 var3val4">62</cell>
 
-<cell cellIdRefs="var1val3 var2val9 var3val2">21</cell>
+<cell cellIdRefs="var1val4 var2val2 var3val5">67</cell>
 
-<cell cellIdRefs="var1val3 var2val9 var3val3">14</cell>
+<cell cellIdRefs="var1val4 var2val2 var3val6">74</cell>
 
-<cell cellIdRefs="var1val3 var2val9 var3val4">1</cell>
+<cell cellIdRefs="var1val4 var2val2 var3val7">60</cell>
 
-<cell cellIdRefs="var1val3 var2val9 var3val5">1</cell>
+<cell cellIdRefs="var1val4 var2val3 var3val1">55</cell>
 
-<cell cellIdRefs="var1val3 var2val10 var3val1">33</cell>
+<cell cellIdRefs="var1val4 var2val3 var3val2">70</cell>
 
-<cell cellIdRefs="var1val3 var2val10 var3val2">19</cell>
+<cell cellIdRefs="var1val4 var2val3 var3val3">66</cell>
 
-<cell cellIdRefs="var1val3 var2val10 var3val3">20</cell>
+<cell cellIdRefs="var1val4 var2val3 var3val4">62</cell>
 
-<cell cellIdRefs="var1val3 var2val10 var3val4">5</cell>
+<cell cellIdRefs="var1val4 var2val3 var3val5">65</cell>
 
-<cell cellIdRefs="var1val3 var2val10 var3val5">1</cell>
+<cell cellIdRefs="var1val4 var2val3 var3val6">89</cell>
 
-<cell cellIdRefs="var1val3 var2val11 var3val1">30</cell>
+<cell cellIdRefs="var1val4 var2val3 var3val7">49</cell>
 
-<cell cellIdRefs="var1val3 var2val11 var3val2">19</cell>
+<cell cellIdRefs="var1val4 var2val4 var3val1">10</cell>
 
-<cell cellIdRefs="var1val3 var2val11 var3val3">16</cell>
+<cell cellIdRefs="var1val4 var2val4 var3val2">12</cell>
 
-<cell cellIdRefs="var1val3 var2val11 var3val4">7</cell>
+<cell cellIdRefs="var1val4 var2val4 var3val3">9</cell>
 
-<cell cellIdRefs="var1val3 var2val12 var3val1">33</cell>
+<cell cellIdRefs="var1val4 var2val4 var3val4">6</cell>
 
-<cell cellIdRefs="var1val3 var2val12 var3val2">16</cell>
+<cell cellIdRefs="var1val4 var2val4 var3val5">5</cell>
 
-<cell cellIdRefs="var1val3 var2val12 var3val3">14</cell>
+<cell cellIdRefs="var1val4 var2val4 var3val6">11</cell>
 
-<cell cellIdRefs="var1val3 var2val12 var3val5">1</cell>
+<cell cellIdRefs="var1val4 var2val4 var3val7">13</cell>
 
-<cell cellIdRefs="var1val4 var2val1 var3val1">115</cell>
+<cell cellIdRefs="var1val4 var2val5 var3val2">1</cell>
 
-<cell cellIdRefs="var1val4 var2val1 var3val2">106</cell>
+<cell cellIdRefs="var1val4 var2val5 var3val3">1</cell>
 
-<cell cellIdRefs="var1val4 var2val1 var3val3">58</cell>
+<cell cellIdRefs="var1val4 var2val5 var3val4">2</cell>
 
-<cell cellIdRefs="var1val4 var2val1 var3val4">7</cell>
+<cell cellIdRefs="var1val4 var2val5 var3val6">2</cell>
 
-<cell cellIdRefs="var1val4 var2val2 var3val1">132</cell>
+<cell cellIdRefs="var1val4 var2val5 var3val7">3</cell>
 
-<cell cellIdRefs="var1val4 var2val2 var3val2">88</cell>
+<cell cellIdRefs="var1val5 var2val1 var3val1">22</cell>
 
-<cell cellIdRefs="var1val4 var2val2 var3val3">68</cell>
+<cell cellIdRefs="var1val5 var2val1 var3val2">21</cell>
 
-<cell cellIdRefs="var1val4 var2val2 var3val4">15</cell>
+<cell cellIdRefs="var1val5 var2val1 var3val3">21</cell>
 
-<cell cellIdRefs="var1val4 var2val2 var3val5">1</cell>
+<cell cellIdRefs="var1val5 var2val1 var3val4">23</cell>
 
-<cell cellIdRefs="var1val4 var2val3 var3val1">130</cell>
+<cell cellIdRefs="var1val5 var2val1 var3val5">26</cell>
 
-<cell cellIdRefs="var1val4 var2val3 var3val2">99</cell>
+<cell cellIdRefs="var1val5 var2val1 var3val6">14</cell>
 
-<cell cellIdRefs="var1val4 var2val3 var3val3">58</cell>
+<cell cellIdRefs="var1val5 var2val1 var3val7">22</cell>
 
-<cell cellIdRefs="var1val4 var2val3 var3val4">12</cell>
+<cell cellIdRefs="var1val5 var2val2 var3val1">14</cell>
 
-<cell cellIdRefs="var1val4 var2val3 var3val5">3</cell>
+<cell cellIdRefs="var1val5 var2val2 var3val2">11</cell>
 
-<cell cellIdRefs="var1val4 var2val4 var3val1">147</cell>
+<cell cellIdRefs="var1val5 var2val2 var3val3">16</cell>
 
-<cell cellIdRefs="var1val4 var2val4 var3val2">93</cell>
+<cell cellIdRefs="var1val5 var2val2 var3val4">15</cell>
 
-<cell cellIdRefs="var1val4 var2val4 var3val3">57</cell>
+<cell cellIdRefs="var1val5 var2val2 var3val5">12</cell>
 
-<cell cellIdRefs="var1val4 var2val4 var3val4">3</cell>
+<cell cellIdRefs="var1val5 var2val2 var3val6">13</cell>
 
-<cell cellIdRefs="var1val4 var2val4 var3val5">4</cell>
+<cell cellIdRefs="var1val5 var2val2 var3val7">13</cell>
 
-<cell cellIdRefs="var1val4 var2val5 var3val1">159</cell>
+<cell cellIdRefs="var1val5 var2val3 var3val1">11</cell>
 
-<cell cellIdRefs="var1val4 var2val5 var3val2">80</cell>
+<cell cellIdRefs="var1val5 var2val3 var3val2">8</cell>
 
-<cell cellIdRefs="var1val4 var2val5 var3val3">76</cell>
+<cell cellIdRefs="var1val5 var2val3 var3val3">13</cell>
 
-<cell cellIdRefs="var1val4 var2val5 var3val4">7</cell>
+<cell cellIdRefs="var1val5 var2val3 var3val4">8</cell>
 
-<cell cellIdRefs="var1val4 var2val6 var3val1">125</cell>
+<cell cellIdRefs="var1val5 var2val3 var3val5">10</cell>
 
-<cell cellIdRefs="var1val4 var2val6 var3val2">95</cell>
+<cell cellIdRefs="var1val5 var2val3 var3val6">11</cell>
 
-<cell cellIdRefs="var1val4 var2val6 var3val3">55</cell>
+<cell cellIdRefs="var1val5 var2val3 var3val7">9</cell>
 
-<cell cellIdRefs="var1val4 var2val6 var3val4">10</cell>
+<cell cellIdRefs="var1val5 var2val4 var3val2">1</cell>
 
-<cell cellIdRefs="var1val4 var2val7 var3val1">131</cell>
+<cell cellIdRefs="var1val5 var2val4 var3val5">1</cell>
 
-<cell cellIdRefs="var1val4 var2val7 var3val2">83</cell>
+<cell cellIdRefs="var1val5 var2val4 var3val7">1</cell>
 
-<cell cellIdRefs="var1val4 var2val7 var3val3">70</cell>
+<cell cellIdRefs="var1val5 var2val5 var3val6">2</cell>
 
-<cell cellIdRefs="var1val4 var2val7 var3val4">12</cell>
+<cell cellIdRefs="var1val6 var2val1 var3val1">33</cell>
 
-<cell cellIdRefs="var1val4 var2val7 var3val5">1</cell>
+<cell cellIdRefs="var1val6 var2val1 var3val2">37</cell>
 
-<cell cellIdRefs="var1val4 var2val8 var3val1">148</cell>
+<cell cellIdRefs="var1val6 var2val1 var3val3">37</cell>
 
-<cell cellIdRefs="var1val4 var2val8 var3val2">98</cell>
+<cell cellIdRefs="var1val6 var2val1 var3val4">33</cell>
 
-<cell cellIdRefs="var1val4 var2val8 var3val3">66</cell>
+<cell cellIdRefs="var1val6 var2val1 var3val5">57</cell>
 
-<cell cellIdRefs="var1val4 var2val8 var3val4">9</cell>
+<cell cellIdRefs="var1val6 var2val1 var3val6">28</cell>
 
-<cell cellIdRefs="var1val4 var2val8 var3val5">1</cell>
+<cell cellIdRefs="var1val6 var2val1 var3val7">37</cell>
 
-<cell cellIdRefs="var1val4 var2val9 var3val1">120</cell>
+<cell cellIdRefs="var1val6 var2val2 var3val1">23</cell>
 
-<cell cellIdRefs="var1val4 var2val9 var3val2">62</cell>
+<cell cellIdRefs="var1val6 var2val2 var3val2">22</cell>
 
-<cell cellIdRefs="var1val4 var2val9 var3val3">62</cell>
+<cell cellIdRefs="var1val6 var2val2 var3val3">28</cell>
 
-<cell cellIdRefs="var1val4 var2val9 var3val4">6</cell>
+<cell cellIdRefs="var1val6 var2val2 var3val4">22</cell>
 
-<cell cellIdRefs="var1val4 var2val9 var3val5">2</cell>
+<cell cellIdRefs="var1val6 var2val2 var3val5">16</cell>
 
-<cell cellIdRefs="var1val4 var2val10 var3val1">139</cell>
+<cell cellIdRefs="var1val6 var2val2 var3val6">14</cell>
 
-<cell cellIdRefs="var1val4 var2val10 var3val2">67</cell>
+<cell cellIdRefs="var1val6 var2val2 var3val7">18</cell>
 
-<cell cellIdRefs="var1val4 var2val10 var3val3">65</cell>
+<cell cellIdRefs="var1val6 var2val3 var3val1">12</cell>
 
-<cell cellIdRefs="var1val4 var2val10 var3val4">5</cell>
+<cell cellIdRefs="var1val6 var2val3 var3val2">7</cell>
 
-<cell cellIdRefs="var1val4 var2val11 var3val1">91</cell>
+<cell cellIdRefs="var1val6 var2val3 var3val3">21</cell>
 
-<cell cellIdRefs="var1val4 var2val11 var3val2">74</cell>
+<cell cellIdRefs="var1val6 var2val3 var3val4">15</cell>
 
-<cell cellIdRefs="var1val4 var2val11 var3val3">89</cell>
+<cell cellIdRefs="var1val6 var2val3 var3val5">19</cell>
 
-<cell cellIdRefs="var1val4 var2val11 var3val4">11</cell>
+<cell cellIdRefs="var1val6 var2val3 var3val6">27</cell>
 
-<cell cellIdRefs="var1val4 var2val11 var3val5">2</cell>
+<cell cellIdRefs="var1val6 var2val3 var3val7">11</cell>
 
-<cell cellIdRefs="var1val4 var2val12 var3val1">135</cell>
+<cell cellIdRefs="var1val6 var2val4 var3val1">2</cell>
 
-<cell cellIdRefs="var1val4 var2val12 var3val2">60</cell>
+<cell cellIdRefs="var1val6 var2val4 var3val2">3</cell>
 
-<cell cellIdRefs="var1val4 var2val12 var3val3">49</cell>
+<cell cellIdRefs="var1val6 var2val4 var3val3">3</cell>
 
-<cell cellIdRefs="var1val4 var2val12 var3val4">13</cell>
+<cell cellIdRefs="var1val6 var2val4 var3val4">3</cell>
 
-<cell cellIdRefs="var1val4 var2val12 var3val5">3</cell>
+<cell cellIdRefs="var1val6 var2val4 var3val5">3</cell>
 
-<cell cellIdRefs="var1val5 var2val1 var3val1">20</cell>
+<cell cellIdRefs="var1val6 var2val4 var3val6">5</cell>
 
-<cell cellIdRefs="var1val5 var2val1 var3val2">22</cell>
+<cell cellIdRefs="var1val6 var2val4 var3val7">4</cell>
 
-<cell cellIdRefs="var1val5 var2val1 var3val3">6</cell>
+<cell cellIdRefs="var1val6 var2val5 var3val3">2</cell>
 
-<cell cellIdRefs="var1val5 var2val1 var3val4">1</cell>
+<cell cellIdRefs="var1val6 var2val5 var3val6">1</cell>
 
-<cell cellIdRefs="var1val5 var2val2 var3val1">17</cell>
+<cell cellIdRefs="var1val6 var2val5 var3val7">1</cell>
 
-<cell cellIdRefs="var1val5 var2val2 var3val2">22</cell>
+<cell cellIdRefs="var1val7 var2val1 var3val1">54</cell>
 
-<cell cellIdRefs="var1val5 var2val2 var3val3">12</cell>
+<cell cellIdRefs="var1val7 var2val1 var3val2">51</cell>
 
-<cell cellIdRefs="var1val5 var2val2 var3val4">1</cell>
+<cell cellIdRefs="var1val7 var2val1 var3val3">60</cell>
 
-<cell cellIdRefs="var1val5 var2val3 var3val1">25</cell>
+<cell cellIdRefs="var1val7 var2val1 var3val4">61</cell>
 
-<cell cellIdRefs="var1val5 var2val3 var3val2">33</cell>
+<cell cellIdRefs="var1val7 var2val1 var3val5">82</cell>
 
-<cell cellIdRefs="var1val5 var2val3 var3val3">15</cell>
+<cell cellIdRefs="var1val7 var2val1 var3val6">38</cell>
 
-<cell cellIdRefs="var1val5 var2val4 var3val1">16</cell>
+<cell cellIdRefs="var1val7 var2val1 var3val7">62</cell>
 
-<cell cellIdRefs="var1val5 var2val4 var3val2">10</cell>
+<cell cellIdRefs="var1val7 var2val2 var3val1">49</cell>
 
-<cell cellIdRefs="var1val5 var2val4 var3val3">7</cell>
+<cell cellIdRefs="var1val7 var2val2 var3val2">49</cell>
 
-<cell cellIdRefs="var1val5 var2val5 var3val1">31</cell>
+<cell cellIdRefs="var1val7 var2val2 var3val3">44</cell>
 
-<cell cellIdRefs="var1val5 var2val5 var3val2">19</cell>
+<cell cellIdRefs="var1val7 var2val2 var3val4">38</cell>
 
-<cell cellIdRefs="var1val5 var2val5 var3val3">11</cell>
+<cell cellIdRefs="var1val7 var2val2 var3val5">46</cell>
 
-<cell cellIdRefs="var1val5 var2val5 var3val4">1</cell>
+<cell cellIdRefs="var1val7 var2val2 var3val6">42</cell>
 
-<cell cellIdRefs="var1val5 var2val5 var3val5">1</cell>
+<cell cellIdRefs="var1val7 var2val2 var3val7">47</cell>
 
-<cell cellIdRefs="var1val5 var2val6 var3val1">22</cell>
+<cell cellIdRefs="var1val7 var2val3 var3val1">33</cell>
 
-<cell cellIdRefs="var1val5 var2val6 var3val2">14</cell>
+<cell cellIdRefs="var1val7 var2val3 var3val2">47</cell>
 
-<cell cellIdRefs="var1val5 var2val6 var3val3">11</cell>
+<cell cellIdRefs="var1val7 var2val3 var3val3">41</cell>
 
-<cell cellIdRefs="var1val5 var2val7 var3val1">21</cell>
+<cell cellIdRefs="var1val7 var2val3 var3val4">28</cell>
 
-<cell cellIdRefs="var1val5 var2val7 var3val2">11</cell>
+<cell cellIdRefs="var1val7 var2val3 var3val5">48</cell>
 
-<cell cellIdRefs="var1val5 var2val7 var3val3">8</cell>
+<cell cellIdRefs="var1val7 var2val3 var3val6">47</cell>
 
-<cell cellIdRefs="var1val5 var2val7 var3val4">1</cell>
+<cell cellIdRefs="var1val7 var2val3 var3val7">37</cell>
 
-<cell cellIdRefs="var1val5 var2val8 var3val1">21</cell>
+<cell cellIdRefs="var1val7 var2val4 var3val1">8</cell>
 
-<cell cellIdRefs="var1val5 var2val8 var3val2">16</cell>
+<cell cellIdRefs="var1val7 var2val4 var3val2">7</cell>
 
-<cell cellIdRefs="var1val5 var2val8 var3val3">13</cell>
+<cell cellIdRefs="var1val7 var2val4 var3val3">6</cell>
 
-<cell cellIdRefs="var1val5 var2val9 var3val1">23</cell>
+<cell cellIdRefs="var1val7 var2val4 var3val4">4</cell>
 
-<cell cellIdRefs="var1val5 var2val9 var3val2">15</cell>
+<cell cellIdRefs="var1val7 var2val4 var3val5">7</cell>
 
-<cell cellIdRefs="var1val5 var2val9 var3val3">8</cell>
+<cell cellIdRefs="var1val7 var2val4 var3val6">4</cell>
 
-<cell cellIdRefs="var1val5 var2val10 var3val1">26</cell>
+<cell cellIdRefs="var1val7 var2val4 var3val7">13</cell>
 
-<cell cellIdRefs="var1val5 var2val10 var3val2">12</cell>
+<cell cellIdRefs="var1val7 var2val5 var3val1">2</cell>
 
-<cell cellIdRefs="var1val5 var2val10 var3val3">10</cell>
+<cell cellIdRefs="var1val7 var2val5 var3val2">1</cell>
 
-<cell cellIdRefs="var1val5 var2val10 var3val4">1</cell>
+<cell cellIdRefs="var1val7 var2val5 var3val3">2</cell>
 
-<cell cellIdRefs="var1val5 var2val11 var3val1">14</cell>
+<cell cellIdRefs="var1val7 var2val5 var3val5">2</cell>
 
-<cell cellIdRefs="var1val5 var2val11 var3val2">13</cell>
+<cell cellIdRefs="var1val7 var2val5 var3val6">4</cell>
 
-<cell cellIdRefs="var1val5 var2val11 var3val3">11</cell>
+<cell cellIdRefs="var1val8 var2val1 var3val1">260</cell>
 
-<cell cellIdRefs="var1val5 var2val11 var3val5">2</cell>
+<cell cellIdRefs="var1val8 var2val1 var3val2">268</cell>
 
-<cell cellIdRefs="var1val5 var2val12 var3val1">22</cell>
+<cell cellIdRefs="var1val8 var2val1 var3val3">322</cell>
 
-<cell cellIdRefs="var1val5 var2val12 var3val2">13</cell>
+<cell cellIdRefs="var1val8 var2val1 var3val4">356</cell>
 
-<cell cellIdRefs="var1val5 var2val12 var3val3">9</cell>
+<cell cellIdRefs="var1val8 var2val1 var3val5">345</cell>
 
-<cell cellIdRefs="var1val5 var2val12 var3val4">1</cell>
+<cell cellIdRefs="var1val8 var2val1 var3val6">251</cell>
 
-<cell cellIdRefs="var1val6 var2val1 var3val1">24</cell>
+<cell cellIdRefs="var1val8 var2val1 var3val7">352</cell>
 
-<cell cellIdRefs="var1val6 var2val1 var3val2">23</cell>
+<cell cellIdRefs="var1val8 var2val2 var3val1">177</cell>
 
-<cell cellIdRefs="var1val6 var2val1 var3val3">21</cell>
+<cell cellIdRefs="var1val8 var2val2 var3val2">172</cell>
 
-<cell cellIdRefs="var1val6 var2val1 var3val4">3</cell>
+<cell cellIdRefs="var1val8 var2val2 var3val3">192</cell>
 
-<cell cellIdRefs="var1val6 var2val1 var3val5">1</cell>
+<cell cellIdRefs="var1val8 var2val2 var3val4">192</cell>
 
-<cell cellIdRefs="var1val6 var2val2 var3val1">25</cell>
+<cell cellIdRefs="var1val8 var2val2 var3val5">207</cell>
 
-<cell cellIdRefs="var1val6 var2val2 var3val2">20</cell>
+<cell cellIdRefs="var1val8 var2val2 var3val6">213</cell>
 
-<cell cellIdRefs="var1val6 var2val2 var3val3">13</cell>
+<cell cellIdRefs="var1val8 var2val2 var3val7">204</cell>
 
-<cell cellIdRefs="var1val6 var2val2 var3val4">2</cell>
+<cell cellIdRefs="var1val8 var2val3 var3val1">103</cell>
 
-<cell cellIdRefs="var1val6 var2val3 var3val1">34</cell>
+<cell cellIdRefs="var1val8 var2val3 var3val2">140</cell>
 
-<cell cellIdRefs="var1val6 var2val3 var3val2">19</cell>
+<cell cellIdRefs="var1val8 var2val3 var3val3">138</cell>
 
-<cell cellIdRefs="var1val6 var2val3 var3val3">18</cell>
+<cell cellIdRefs="var1val8 var2val3 var3val4">150</cell>
 
-<cell cellIdRefs="var1val6 var2val3 var3val4">4</cell>
+<cell cellIdRefs="var1val8 var2val3 var3val5">175</cell>
 
-<cell cellIdRefs="var1val6 var2val4 var3val1">29</cell>
+<cell cellIdRefs="var1val8 var2val3 var3val6">207</cell>
 
-<cell cellIdRefs="var1val6 var2val4 var3val2">23</cell>
+<cell cellIdRefs="var1val8 var2val3 var3val7">155</cell>
 
-<cell cellIdRefs="var1val6 var2val4 var3val3">22</cell>
+<cell cellIdRefs="var1val8 var2val4 var3val1">13</cell>
 
-<cell cellIdRefs="var1val6 var2val4 var3val4">2</cell>
+<cell cellIdRefs="var1val8 var2val4 var3val2">14</cell>
 
-<cell cellIdRefs="var1val6 var2val4 var3val5">1</cell>
+<cell cellIdRefs="var1val8 var2val4 var3val3">12</cell>
 
-<cell cellIdRefs="var1val6 var2val5 var3val1">35</cell>
+<cell cellIdRefs="var1val8 var2val4 var3val4">18</cell>
 
-<cell cellIdRefs="var1val6 var2val5 var3val2">17</cell>
+<cell cellIdRefs="var1val8 var2val4 var3val5">22</cell>
 
-<cell cellIdRefs="var1val6 var2val5 var3val3">18</cell>
+<cell cellIdRefs="var1val8 var2val4 var3val6">35</cell>
 
-<cell cellIdRefs="var1val6 var2val6 var3val1">33</cell>
+<cell cellIdRefs="var1val8 var2val4 var3val7">19</cell>
 
-<cell cellIdRefs="var1val6 var2val6 var3val2">23</cell>
+<cell cellIdRefs="var1val8 var2val5 var3val1">2</cell>
 
-<cell cellIdRefs="var1val6 var2val6 var3val3">12</cell>
+<cell cellIdRefs="var1val8 var2val5 var3val2">6</cell>
 
-<cell cellIdRefs="var1val6 var2val6 var3val4">2</cell>
+<cell cellIdRefs="var1val8 var2val5 var3val3">2</cell>
 
-<cell cellIdRefs="var1val6 var2val7 var3val1">37</cell>
+<cell cellIdRefs="var1val8 var2val5 var3val4">7</cell>
 
-<cell cellIdRefs="var1val6 var2val7 var3val2">22</cell>
+<cell cellIdRefs="var1val8 var2val5 var3val5">2</cell>
 
-<cell cellIdRefs="var1val6 var2val7 var3val3">7</cell>
+<cell cellIdRefs="var1val8 var2val5 var3val6">3</cell>
 
-<cell cellIdRefs="var1val6 var2val7 var3val4">3</cell>
+<cell cellIdRefs="var1val8 var2val5 var3val7">4</cell>
 
-<cell cellIdRefs="var1val6 var2val8 var3val1">37</cell>
+<cell cellIdRefs="var1val9 var2val1 var3val1">104</cell>
 
-<cell cellIdRefs="var1val6 var2val8 var3val2">28</cell>
+<cell cellIdRefs="var1val9 var2val1 var3val2">99</cell>
 
-<cell cellIdRefs="var1val6 var2val8 var3val3">21</cell>
+<cell cellIdRefs="var1val9 var2val1 var3val3">139</cell>
 
-<cell cellIdRefs="var1val6 var2val8 var3val4">3</cell>
+<cell cellIdRefs="var1val9 var2val1 var3val4">119</cell>
 
-<cell cellIdRefs="var1val6 var2val8 var3val5">2</cell>
+<cell cellIdRefs="var1val9 var2val1 var3val5">108</cell>
 
-<cell cellIdRefs="var1val6 var2val9 var3val1">33</cell>
+<cell cellIdRefs="var1val9 var2val1 var3val6">90</cell>
 
-<cell cellIdRefs="var1val6 var2val9 var3val2">22</cell>
+<cell cellIdRefs="var1val9 var2val1 var3val7">138</cell>
 
-<cell cellIdRefs="var1val6 var2val9 var3val3">15</cell>
+<cell cellIdRefs="var1val9 var2val2 var3val1">62</cell>
 
-<cell cellIdRefs="var1val6 var2val9 var3val4">3</cell>
+<cell cellIdRefs="var1val9 var2val2 var3val2">71</cell>
 
-<cell cellIdRefs="var1val6 var2val10 var3val1">57</cell>
+<cell cellIdRefs="var1val9 var2val2 var3val3">57</cell>
 
-<cell cellIdRefs="var1val6 var2val10 var3val2">16</cell>
+<cell cellIdRefs="var1val9 var2val2 var3val4">68</cell>
 
-<cell cellIdRefs="var1val6 var2val10 var3val3">19</cell>
+<cell cellIdRefs="var1val9 var2val2 var3val5">47</cell>
 
-<cell cellIdRefs="var1val6 var2val10 var3val4">3</cell>
+<cell cellIdRefs="var1val9 var2val2 var3val6">62</cell>
 
-<cell cellIdRefs="var1val6 var2val11 var3val1">28</cell>
+<cell cellIdRefs="var1val9 var2val2 var3val7">73</cell>
 
-<cell cellIdRefs="var1val6 var2val11 var3val2">14</cell>
+<cell cellIdRefs="var1val9 var2val3 var3val1">62</cell>
 
-<cell cellIdRefs="var1val6 var2val11 var3val3">27</cell>
+<cell cellIdRefs="var1val9 var2val3 var3val2">48</cell>
 
-<cell cellIdRefs="var1val6 var2val11 var3val4">5</cell>
+<cell cellIdRefs="var1val9 var2val3 var3val3">46</cell>
 
-<cell cellIdRefs="var1val6 var2val11 var3val5">1</cell>
+<cell cellIdRefs="var1val9 var2val3 var3val4">50</cell>
 
-<cell cellIdRefs="var1val6 var2val12 var3val1">37</cell>
+<cell cellIdRefs="var1val9 var2val3 var3val5">59</cell>
 
-<cell cellIdRefs="var1val6 var2val12 var3val2">18</cell>
+<cell cellIdRefs="var1val9 var2val3 var3val6">64</cell>
 
-<cell cellIdRefs="var1val6 var2val12 var3val3">11</cell>
+<cell cellIdRefs="var1val9 var2val3 var3val7">56</cell>
 
-<cell cellIdRefs="var1val6 var2val12 var3val4">4</cell>
+<cell cellIdRefs="var1val9 var2val4 var3val1">9</cell>
 
-<cell cellIdRefs="var1val6 var2val12 var3val5">1</cell>
+<cell cellIdRefs="var1val9 var2val4 var3val2">13</cell>
 
-<cell cellIdRefs="var1val7 var2val1 var3val1">40</cell>
+<cell cellIdRefs="var1val9 var2val4 var3val3">11</cell>
 
-<cell cellIdRefs="var1val7 var2val1 var3val2">39</cell>
+<cell cellIdRefs="var1val9 var2val4 var3val4">9</cell>
 
-<cell cellIdRefs="var1val7 var2val1 var3val3">35</cell>
+<cell cellIdRefs="var1val9 var2val4 var3val5">8</cell>
 
-<cell cellIdRefs="var1val7 var2val1 var3val4">6</cell>
+<cell cellIdRefs="var1val9 var2val4 var3val6">10</cell>
 
-<cell cellIdRefs="var1val7 var2val1 var3val5">1</cell>
+<cell cellIdRefs="var1val9 var2val4 var3val7">10</cell>
 
-<cell cellIdRefs="var1val7 var2val2 var3val1">63</cell>
+<cell cellIdRefs="var1val9 var2val5 var3val2">1</cell>
 
-<cell cellIdRefs="var1val7 var2val2 var3val2">43</cell>
+<cell cellIdRefs="var1val9 var2val5 var3val3">1</cell>
 
-<cell cellIdRefs="var1val7 var2val2 var3val3">26</cell>
+<cell cellIdRefs="var1val9 var2val5 var3val4">2</cell>
 
-<cell cellIdRefs="var1val7 var2val2 var3val4">5</cell>
+<cell cellIdRefs="var1val9 var2val5 var3val5">1</cell>
 
-<cell cellIdRefs="var1val7 var2val3 var3val1">66</cell>
+<cell cellIdRefs="var1val9 var2val5 var3val6">1</cell>
 
-<cell cellIdRefs="var1val7 var2val3 var3val2">53</cell>
+<cell cellIdRefs="var1val10 var2val1 var3val1">21</cell>
 
-<cell cellIdRefs="var1val7 var2val3 var3val3">32</cell>
+<cell cellIdRefs="var1val10 var2val1 var3val2">20</cell>
 
-<cell cellIdRefs="var1val7 var2val3 var3val4">8</cell>
+<cell cellIdRefs="var1val10 var2val1 var3val3">23</cell>
 
-<cell cellIdRefs="var1val7 var2val4 var3val1">61</cell>
+<cell cellIdRefs="var1val10 var2val1 var3val4">23</cell>
 
-<cell cellIdRefs="var1val7 var2val4 var3val2">36</cell>
+<cell cellIdRefs="var1val10 var2val1 var3val5">32</cell>
 
-<cell cellIdRefs="var1val7 var2val4 var3val3">41</cell>
+<cell cellIdRefs="var1val10 var2val1 var3val6">19</cell>
 
-<cell cellIdRefs="var1val7 var2val4 var3val4">12</cell>
+<cell cellIdRefs="var1val10 var2val1 var3val7">25</cell>
 
-<cell cellIdRefs="var1val7 var2val4 var3val5">1</cell>
+<cell cellIdRefs="var1val10 var2val2 var3val1">14</cell>
 
-<cell cellIdRefs="var1val7 var2val5 var3val1">69</cell>
-
-<cell cellIdRefs="var1val7 var2val5 var3val2">40</cell>
-
-<cell cellIdRefs="var1val7 var2val5 var3val3">51</cell>
-
-<cell cellIdRefs="var1val7 var2val5 var3val4">6</cell>
-
-<cell cellIdRefs="var1val7 var2val6 var3val1">54</cell>
-
-<cell cellIdRefs="var1val7 var2val6 var3val2">49</cell>
-
-<cell cellIdRefs="var1val7 var2val6 var3val3">33</cell>
-
-<cell cellIdRefs="var1val7 var2val6 var3val4">8</cell>
-
-<cell cellIdRefs="var1val7 var2val6 var3val5">2</cell>
-
-<cell cellIdRefs="var1val7 var2val7 var3val1">51</cell>
-
-<cell cellIdRefs="var1val7 var2val7 var3val2">49</cell>
-
-<cell cellIdRefs="var1val7 var2val7 var3val3">47</cell>
-
-<cell cellIdRefs="var1val7 var2val7 var3val4">7</cell>
-
-<cell cellIdRefs="var1val7 var2val7 var3val5">1</cell>
-
-<cell cellIdRefs="var1val7 var2val8 var3val1">60</cell>
-
-<cell cellIdRefs="var1val7 var2val8 var3val2">44</cell>
-
-<cell cellIdRefs="var1val7 var2val8 var3val3">41</cell>
-
-<cell cellIdRefs="var1val7 var2val8 var3val4">6</cell>
-
-<cell cellIdRefs="var1val7 var2val8 var3val5">2</cell>
-
-<cell cellIdRefs="var1val7 var2val9 var3val1">61</cell>
-
-<cell cellIdRefs="var1val7 var2val9 var3val2">38</cell>
-
-<cell cellIdRefs="var1val7 var2val9 var3val3">28</cell>
-
-<cell cellIdRefs="var1val7 var2val9 var3val4">4</cell>
-
-<cell cellIdRefs="var1val7 var2val10 var3val1">82</cell>
-
-<cell cellIdRefs="var1val7 var2val10 var3val2">46</cell>
-
-<cell cellIdRefs="var1val7 var2val10 var3val3">48</cell>
-
-<cell cellIdRefs="var1val7 var2val10 var3val4">7</cell>
-
-<cell cellIdRefs="var1val7 var2val10 var3val5">2</cell>
-
-<cell cellIdRefs="var1val7 var2val11 var3val1">38</cell>
-
-<cell cellIdRefs="var1val7 var2val11 var3val2">42</cell>
-
-<cell cellIdRefs="var1val7 var2val11 var3val3">47</cell>
-
-<cell cellIdRefs="var1val7 var2val11 var3val4">4</cell>
-
-<cell cellIdRefs="var1val7 var2val11 var3val5">4</cell>
-
-<cell cellIdRefs="var1val7 var2val12 var3val1">62</cell>
-
-<cell cellIdRefs="var1val7 var2val12 var3val2">47</cell>
-
-<cell cellIdRefs="var1val7 var2val12 var3val3">37</cell>
-
-<cell cellIdRefs="var1val7 var2val12 var3val4">13</cell>
-
-<cell cellIdRefs="var1val8 var2val1 var3val1">310</cell>
-
-<cell cellIdRefs="var1val8 var2val1 var3val2">228</cell>
-
-<cell cellIdRefs="var1val8 var2val1 var3val3">176</cell>
-
-<cell cellIdRefs="var1val8 var2val1 var3val4">15</cell>
-
-<cell cellIdRefs="var1val8 var2val1 var3val5">2</cell>
-
-<cell cellIdRefs="var1val8 var2val2 var3val1">269</cell>
-
-<cell cellIdRefs="var1val8 var2val2 var3val2">191</cell>
-
-<cell cellIdRefs="var1val8 var2val2 var3val3">136</cell>
-
-<cell cellIdRefs="var1val8 var2val2 var3val4">24</cell>
-
-<cell cellIdRefs="var1val8 var2val3 var3val1">332</cell>
-
-<cell cellIdRefs="var1val8 var2val3 var3val2">273</cell>
-
-<cell cellIdRefs="var1val8 var2val3 var3val3">175</cell>
-
-<cell cellIdRefs="var1val8 var2val3 var3val4">24</cell>
-
-<cell cellIdRefs="var1val8 var2val3 var3val5">1</cell>
-
-<cell cellIdRefs="var1val8 var2val4 var3val1">246</cell>
-
-<cell cellIdRefs="var1val8 var2val4 var3val2">152</cell>
-
-<cell cellIdRefs="var1val8 var2val4 var3val3">118</cell>
-
-<cell cellIdRefs="var1val8 var2val4 var3val4">14</cell>
-
-<cell cellIdRefs="var1val8 var2val4 var3val5">3</cell>
-
-<cell cellIdRefs="var1val8 var2val5 var3val1">379</cell>
-
-<cell cellIdRefs="var1val8 var2val5 var3val2">219</cell>
-
-<cell cellIdRefs="var1val8 var2val5 var3val3">169</cell>
-
-<cell cellIdRefs="var1val8 var2val5 var3val4">17</cell>
-
-<cell cellIdRefs="var1val8 var2val6 var3val1">260</cell>
-
-<cell cellIdRefs="var1val8 var2val6 var3val2">177</cell>
-
-<cell cellIdRefs="var1val8 var2val6 var3val3">103</cell>
-
-<cell cellIdRefs="var1val8 var2val6 var3val4">13</cell>
-
-<cell cellIdRefs="var1val8 var2val6 var3val5">2</cell>
-
-<cell cellIdRefs="var1val8 var2val7 var3val1">268</cell>
-
-<cell cellIdRefs="var1val8 var2val7 var3val2">172</cell>
-
-<cell cellIdRefs="var1val8 var2val7 var3val3">140</cell>
-
-<cell cellIdRefs="var1val8 var2val7 var3val4">14</cell>
-
-<cell cellIdRefs="var1val8 var2val7 var3val5">6</cell>
-
-<cell cellIdRefs="var1val8 var2val8 var3val1">322</cell>
-
-<cell cellIdRefs="var1val8 var2val8 var3val2">192</cell>
-
-<cell cellIdRefs="var1val8 var2val8 var3val3">138</cell>
-
-<cell cellIdRefs="var1val8 var2val8 var3val4">12</cell>
-
-<cell cellIdRefs="var1val8 var2val8 var3val5">2</cell>
-
-<cell cellIdRefs="var1val8 var2val9 var3val1">356</cell>
-
-<cell cellIdRefs="var1val8 var2val9 var3val2">192</cell>
-
-<cell cellIdRefs="var1val8 var2val9 var3val3">150</cell>
-
-<cell cellIdRefs="var1val8 var2val9 var3val4">18</cell>
-
-<cell cellIdRefs="var1val8 var2val9 var3val5">7</cell>
-
-<cell cellIdRefs="var1val8 var2val10 var3val1">345</cell>
-
-<cell cellIdRefs="var1val8 var2val10 var3val2">207</cell>
-
-<cell cellIdRefs="var1val8 var2val10 var3val3">175</cell>
-
-<cell cellIdRefs="var1val8 var2val10 var3val4">22</cell>
-
-<cell cellIdRefs="var1val8 var2val10 var3val5">2</cell>
-
-<cell cellIdRefs="var1val8 var2val11 var3val1">251</cell>
-
-<cell cellIdRefs="var1val8 var2val11 var3val2">213</cell>
-
-<cell cellIdRefs="var1val8 var2val11 var3val3">207</cell>
-
-<cell cellIdRefs="var1val8 var2val11 var3val4">35</cell>
-
-<cell cellIdRefs="var1val8 var2val11 var3val5">3</cell>
-
-<cell cellIdRefs="var1val8 var2val12 var3val1">352</cell>
-
-<cell cellIdRefs="var1val8 var2val12 var3val2">204</cell>
-
-<cell cellIdRefs="var1val8 var2val12 var3val3">155</cell>
-
-<cell cellIdRefs="var1val8 var2val12 var3val4">19</cell>
-
-<cell cellIdRefs="var1val8 var2val12 var3val5">4</cell>
-
-<cell cellIdRefs="var1val9 var2val1 var3val1">103</cell>
-
-<cell cellIdRefs="var1val9 var2val1 var3val2">77</cell>
-
-<cell cellIdRefs="var1val9 var2val1 var3val3">77</cell>
-
-<cell cellIdRefs="var1val9 var2val1 var3val4">8</cell>
-
-<cell cellIdRefs="var1val9 var2val1 var3val5">1</cell>
-
-<cell cellIdRefs="var1val9 var2val2 var3val1">100</cell>
-
-<cell cellIdRefs="var1val9 var2val2 var3val2">74</cell>
-
-<cell cellIdRefs="var1val9 var2val2 var3val3">69</cell>
-
-<cell cellIdRefs="var1val9 var2val2 var3val4">8</cell>
-
-<cell cellIdRefs="var1val9 var2val3 var3val1">129</cell>
-
-<cell cellIdRefs="var1val9 var2val3 var3val2">56</cell>
-
-<cell cellIdRefs="var1val9 var2val3 var3val3">67</cell>
-
-<cell cellIdRefs="var1val9 var2val3 var3val4">7</cell>
-
-<cell cellIdRefs="var1val9 var2val3 var3val5">1</cell>
-
-<cell cellIdRefs="var1val9 var2val4 var3val1">110</cell>
-
-<cell cellIdRefs="var1val9 var2val4 var3val2">79</cell>
-
-<cell cellIdRefs="var1val9 var2val4 var3val3">59</cell>
-
-<cell cellIdRefs="var1val9 var2val4 var3val4">16</cell>
-
-<cell cellIdRefs="var1val9 var2val4 var3val5">2</cell>
-
-<cell cellIdRefs="var1val9 var2val5 var3val1">129</cell>
-
-<cell cellIdRefs="var1val9 var2val5 var3val2">60</cell>
-
-<cell cellIdRefs="var1val9 var2val5 var3val3">66</cell>
-
-<cell cellIdRefs="var1val9 var2val5 var3val4">14</cell>
-
-<cell cellIdRefs="var1val9 var2val6 var3val1">104</cell>
-
-<cell cellIdRefs="var1val9 var2val6 var3val2">62</cell>
-
-<cell cellIdRefs="var1val9 var2val6 var3val3">62</cell>
-
-<cell cellIdRefs="var1val9 var2val6 var3val4">9</cell>
-
-<cell cellIdRefs="var1val9 var2val7 var3val1">99</cell>
-
-<cell cellIdRefs="var1val9 var2val7 var3val2">71</cell>
-
-<cell cellIdRefs="var1val9 var2val7 var3val3">48</cell>
-
-<cell cellIdRefs="var1val9 var2val7 var3val4">13</cell>
-
-<cell cellIdRefs="var1val9 var2val7 var3val5">1</cell>
-
-<cell cellIdRefs="var1val9 var2val8 var3val1">139</cell>
-
-<cell cellIdRefs="var1val9 var2val8 var3val2">57</cell>
-
-<cell cellIdRefs="var1val9 var2val8 var3val3">46</cell>
-
-<cell cellIdRefs="var1val9 var2val8 var3val4">11</cell>
-
-<cell cellIdRefs="var1val9 var2val8 var3val5">1</cell>
-
-<cell cellIdRefs="var1val9 var2val9 var3val1">119</cell>
-
-<cell cellIdRefs="var1val9 var2val9 var3val2">68</cell>
-
-<cell cellIdRefs="var1val9 var2val9 var3val3">50</cell>
-
-<cell cellIdRefs="var1val9 var2val9 var3val4">9</cell>
-
-<cell cellIdRefs="var1val9 var2val9 var3val5">2</cell>
-
-<cell cellIdRefs="var1val9 var2val10 var3val1">108</cell>
-
-<cell cellIdRefs="var1val9 var2val10 var3val2">47</cell>
-
-<cell cellIdRefs="var1val9 var2val10 var3val3">59</cell>
-
-<cell cellIdRefs="var1val9 var2val10 var3val4">8</cell>
-
-<cell cellIdRefs="var1val9 var2val10 var3val5">1</cell>
-
-<cell cellIdRefs="var1val9 var2val11 var3val1">90</cell>
-
-<cell cellIdRefs="var1val9 var2val11 var3val2">62</cell>
-
-<cell cellIdRefs="var1val9 var2val11 var3val3">64</cell>
-
-<cell cellIdRefs="var1val9 var2val11 var3val4">10</cell>
-
-<cell cellIdRefs="var1val9 var2val11 var3val5">1</cell>
-
-<cell cellIdRefs="var1val9 var2val12 var3val1">138</cell>
-
-<cell cellIdRefs="var1val9 var2val12 var3val2">73</cell>
-
-<cell cellIdRefs="var1val9 var2val12 var3val3">56</cell>
-
-<cell cellIdRefs="var1val9 var2val12 var3val4">10</cell>
-
-<cell cellIdRefs="var1val10 var2val1 var3val1">15</cell>
-
-<cell cellIdRefs="var1val10 var2val1 var3val2">19</cell>
-
-<cell cellIdRefs="var1val10 var2val1 var3val3">19</cell>
-
-<cell cellIdRefs="var1val10 var2val1 var3val4">4</cell>
-
-<cell cellIdRefs="var1val10 var2val1 var3val5">1</cell>
-
-<cell cellIdRefs="var1val10 var2val2 var3val1">26</cell>
-
-<cell cellIdRefs="var1val10 var2val2 var3val2">21</cell>
+<cell cellIdRefs="var1val10 var2val2 var3val2">20</cell>
 
 <cell cellIdRefs="var1val10 var2val2 var3val3">15</cell>
 
-<cell cellIdRefs="var1val10 var2val3 var3val1">26</cell>
+<cell cellIdRefs="var1val10 var2val2 var3val4">11</cell>
 
-<cell cellIdRefs="var1val10 var2val3 var3val2">24</cell>
+<cell cellIdRefs="var1val10 var2val2 var3val5">19</cell>
 
-<cell cellIdRefs="var1val10 var2val3 var3val3">15</cell>
+<cell cellIdRefs="var1val10 var2val2 var3val6">18</cell>
 
-<cell cellIdRefs="var1val10 var2val3 var3val4">1</cell>
+<cell cellIdRefs="var1val10 var2val2 var3val7">18</cell>
 
-<cell cellIdRefs="var1val10 var2val4 var3val1">25</cell>
+<cell cellIdRefs="var1val10 var2val3 var3val1">18</cell>
 
-<cell cellIdRefs="var1val10 var2val4 var3val2">18</cell>
+<cell cellIdRefs="var1val10 var2val3 var3val2">11</cell>
 
-<cell cellIdRefs="var1val10 var2val4 var3val3">15</cell>
+<cell cellIdRefs="var1val10 var2val3 var3val3">10</cell>
 
-<cell cellIdRefs="var1val10 var2val4 var3val4">3</cell>
+<cell cellIdRefs="var1val10 var2val3 var3val4">19</cell>
 
-<cell cellIdRefs="var1val10 var2val5 var3val1">26</cell>
+<cell cellIdRefs="var1val10 var2val3 var3val5">14</cell>
 
-<cell cellIdRefs="var1val10 var2val5 var3val2">13</cell>
+<cell cellIdRefs="var1val10 var2val3 var3val6">14</cell>
 
-<cell cellIdRefs="var1val10 var2val5 var3val3">12</cell>
+<cell cellIdRefs="var1val10 var2val3 var3val7">10</cell>
 
-<cell cellIdRefs="var1val10 var2val6 var3val1">21</cell>
+<cell cellIdRefs="var1val10 var2val4 var3val2">4</cell>
 
-<cell cellIdRefs="var1val10 var2val6 var3val2">14</cell>
+<cell cellIdRefs="var1val10 var2val4 var3val3">1</cell>
 
-<cell cellIdRefs="var1val10 var2val6 var3val3">18</cell>
+<cell cellIdRefs="var1val10 var2val4 var3val4">1</cell>
 
-<cell cellIdRefs="var1val10 var2val6 var3val5">1</cell>
+<cell cellIdRefs="var1val10 var2val4 var3val5">2</cell>
 
-<cell cellIdRefs="var1val10 var2val7 var3val1">20</cell>
+<cell cellIdRefs="var1val10 var2val4 var3val6">5</cell>
 
-<cell cellIdRefs="var1val10 var2val7 var3val2">20</cell>
+<cell cellIdRefs="var1val10 var2val4 var3val7">2</cell>
 
-<cell cellIdRefs="var1val10 var2val7 var3val3">11</cell>
+<cell cellIdRefs="var1val10 var2val5 var3val1">1</cell>
 
-<cell cellIdRefs="var1val10 var2val7 var3val4">4</cell>
+<cell cellIdRefs="var1val10 var2val5 var3val4">1</cell>
 
-<cell cellIdRefs="var1val10 var2val8 var3val1">23</cell>
+<cell cellIdRefs="var1val10 var2val5 var3val5">1</cell>
 
-<cell cellIdRefs="var1val10 var2val8 var3val2">15</cell>
+<cell cellIdRefs="var1val10 var2val5 var3val7">1</cell>
 
-<cell cellIdRefs="var1val10 var2val8 var3val3">10</cell>
+<cell cellIdRefs="var1val11 var2val1 var3val1">52</cell>
 
-<cell cellIdRefs="var1val10 var2val8 var3val4">1</cell>
+<cell cellIdRefs="var1val11 var2val1 var3val2">51</cell>
 
-<cell cellIdRefs="var1val10 var2val9 var3val1">23</cell>
+<cell cellIdRefs="var1val11 var2val1 var3val3">55</cell>
 
-<cell cellIdRefs="var1val10 var2val9 var3val2">11</cell>
+<cell cellIdRefs="var1val11 var2val1 var3val4">70</cell>
 
-<cell cellIdRefs="var1val10 var2val9 var3val3">19</cell>
+<cell cellIdRefs="var1val11 var2val1 var3val5">50</cell>
 
-<cell cellIdRefs="var1val10 var2val9 var3val4">1</cell>
+<cell cellIdRefs="var1val11 var2val1 var3val6">52</cell>
 
-<cell cellIdRefs="var1val10 var2val9 var3val5">1</cell>
+<cell cellIdRefs="var1val11 var2val1 var3val7">60</cell>
 
-<cell cellIdRefs="var1val10 var2val10 var3val1">32</cell>
+<cell cellIdRefs="var1val11 var2val2 var3val1">34</cell>
 
-<cell cellIdRefs="var1val10 var2val10 var3val2">19</cell>
+<cell cellIdRefs="var1val11 var2val2 var3val2">32</cell>
 
-<cell cellIdRefs="var1val10 var2val10 var3val3">14</cell>
+<cell cellIdRefs="var1val11 var2val2 var3val3">31</cell>
 
-<cell cellIdRefs="var1val10 var2val10 var3val4">2</cell>
+<cell cellIdRefs="var1val11 var2val2 var3val4">31</cell>
 
-<cell cellIdRefs="var1val10 var2val10 var3val5">1</cell>
+<cell cellIdRefs="var1val11 var2val2 var3val5">29</cell>
 
-<cell cellIdRefs="var1val10 var2val11 var3val1">19</cell>
+<cell cellIdRefs="var1val11 var2val2 var3val6">29</cell>
 
-<cell cellIdRefs="var1val10 var2val11 var3val2">18</cell>
+<cell cellIdRefs="var1val11 var2val2 var3val7">33</cell>
 
-<cell cellIdRefs="var1val10 var2val11 var3val3">14</cell>
+<cell cellIdRefs="var1val11 var2val3 var3val1">31</cell>
 
-<cell cellIdRefs="var1val10 var2val11 var3val4">5</cell>
+<cell cellIdRefs="var1val11 var2val3 var3val2">28</cell>
 
-<cell cellIdRefs="var1val10 var2val12 var3val1">25</cell>
+<cell cellIdRefs="var1val11 var2val3 var3val3">26</cell>
 
-<cell cellIdRefs="var1val10 var2val12 var3val2">18</cell>
+<cell cellIdRefs="var1val11 var2val3 var3val4">26</cell>
 
-<cell cellIdRefs="var1val10 var2val12 var3val3">10</cell>
+<cell cellIdRefs="var1val11 var2val3 var3val5">21</cell>
 
-<cell cellIdRefs="var1val10 var2val12 var3val4">2</cell>
+<cell cellIdRefs="var1val11 var2val3 var3val6">35</cell>
 
-<cell cellIdRefs="var1val10 var2val12 var3val5">1</cell>
+<cell cellIdRefs="var1val11 var2val3 var3val7">19</cell>
 
-<cell cellIdRefs="var1val11 var2val1 var3val1">53</cell>
+<cell cellIdRefs="var1val11 var2val4 var3val1">3</cell>
 
-<cell cellIdRefs="var1val11 var2val1 var3val2">39</cell>
+<cell cellIdRefs="var1val11 var2val4 var3val2">2</cell>
 
-<cell cellIdRefs="var1val11 var2val1 var3val3">33</cell>
+<cell cellIdRefs="var1val11 var2val4 var3val3">6</cell>
 
-<cell cellIdRefs="var1val11 var2val1 var3val4">5</cell>
+<cell cellIdRefs="var1val11 var2val4 var3val4">1</cell>
 
-<cell cellIdRefs="var1val11 var2val2 var3val1">42</cell>
+<cell cellIdRefs="var1val11 var2val4 var3val5">5</cell>
 
-<cell cellIdRefs="var1val11 var2val2 var3val2">37</cell>
+<cell cellIdRefs="var1val11 var2val4 var3val6">6</cell>
 
-<cell cellIdRefs="var1val11 var2val2 var3val3">33</cell>
+<cell cellIdRefs="var1val11 var2val4 var3val7">7</cell>
 
-<cell cellIdRefs="var1val11 var2val2 var3val4">3</cell>
+<cell cellIdRefs="var1val11 var2val5 var3val2">1</cell>
 
-<cell cellIdRefs="var1val11 var2val3 var3val1">46</cell>
+<cell cellIdRefs="var1val11 var2val5 var3val6">2</cell>
 
-<cell cellIdRefs="var1val11 var2val3 var3val2">35</cell>
+<cell cellIdRefs="var1val12 var2val1 var3val1">73</cell>
 
-<cell cellIdRefs="var1val11 var2val3 var3val3">27</cell>
+<cell cellIdRefs="var1val12 var2val1 var3val2">76</cell>
 
-<cell cellIdRefs="var1val11 var2val3 var3val4">3</cell>
+<cell cellIdRefs="var1val12 var2val1 var3val3">78</cell>
 
-<cell cellIdRefs="var1val11 var2val3 var3val5">1</cell>
+<cell cellIdRefs="var1val12 var2val1 var3val4">47</cell>
 
-<cell cellIdRefs="var1val11 var2val4 var3val1">54</cell>
+<cell cellIdRefs="var1val12 var2val1 var3val5">93</cell>
 
-<cell cellIdRefs="var1val11 var2val4 var3val2">52</cell>
+<cell cellIdRefs="var1val12 var2val1 var3val6">48</cell>
 
-<cell cellIdRefs="var1val11 var2val4 var3val3">33</cell>
+<cell cellIdRefs="var1val12 var2val1 var3val7">77</cell>
 
-<cell cellIdRefs="var1val11 var2val4 var3val4">2</cell>
+<cell cellIdRefs="var1val12 var2val2 var3val1">54</cell>
 
-<cell cellIdRefs="var1val11 var2val5 var3val1">87</cell>
+<cell cellIdRefs="var1val12 var2val2 var3val2">42</cell>
 
-<cell cellIdRefs="var1val11 var2val5 var3val2">32</cell>
+<cell cellIdRefs="var1val12 var2val2 var3val3">49</cell>
 
-<cell cellIdRefs="var1val11 var2val5 var3val3">29</cell>
+<cell cellIdRefs="var1val12 var2val2 var3val4">31</cell>
 
-<cell cellIdRefs="var1val11 var2val5 var3val4">2</cell>
+<cell cellIdRefs="var1val12 var2val2 var3val5">52</cell>
 
-<cell cellIdRefs="var1val11 var2val5 var3val5">1</cell>
+<cell cellIdRefs="var1val12 var2val2 var3val6">45</cell>
 
-<cell cellIdRefs="var1val11 var2val6 var3val1">52</cell>
+<cell cellIdRefs="var1val12 var2val2 var3val7">58</cell>
 
-<cell cellIdRefs="var1val11 var2val6 var3val2">34</cell>
+<cell cellIdRefs="var1val12 var2val3 var3val1">36</cell>
 
-<cell cellIdRefs="var1val11 var2val6 var3val3">31</cell>
+<cell cellIdRefs="var1val12 var2val3 var3val2">41</cell>
 
-<cell cellIdRefs="var1val11 var2val6 var3val4">3</cell>
+<cell cellIdRefs="var1val12 var2val3 var3val3">21</cell>
 
-<cell cellIdRefs="var1val11 var2val7 var3val1">51</cell>
+<cell cellIdRefs="var1val12 var2val3 var3val4">21</cell>
 
-<cell cellIdRefs="var1val11 var2val7 var3val2">32</cell>
+<cell cellIdRefs="var1val12 var2val3 var3val5">38</cell>
 
-<cell cellIdRefs="var1val11 var2val7 var3val3">28</cell>
+<cell cellIdRefs="var1val12 var2val3 var3val6">45</cell>
 
-<cell cellIdRefs="var1val11 var2val7 var3val4">2</cell>
+<cell cellIdRefs="var1val12 var2val3 var3val7">33</cell>
 
-<cell cellIdRefs="var1val11 var2val7 var3val5">1</cell>
+<cell cellIdRefs="var1val12 var2val4 var3val1">1</cell>
 
-<cell cellIdRefs="var1val11 var2val8 var3val1">55</cell>
+<cell cellIdRefs="var1val12 var2val4 var3val2">1</cell>
 
-<cell cellIdRefs="var1val11 var2val8 var3val2">31</cell>
+<cell cellIdRefs="var1val12 var2val4 var3val3">2</cell>
 
-<cell cellIdRefs="var1val11 var2val8 var3val3">26</cell>
+<cell cellIdRefs="var1val12 var2val4 var3val4">3</cell>
 
-<cell cellIdRefs="var1val11 var2val8 var3val4">6</cell>
+<cell cellIdRefs="var1val12 var2val4 var3val5">4</cell>
 
-<cell cellIdRefs="var1val11 var2val9 var3val1">70</cell>
+<cell cellIdRefs="var1val12 var2val4 var3val6">5</cell>
 
-<cell cellIdRefs="var1val11 var2val9 var3val2">31</cell>
+<cell cellIdRefs="var1val12 var2val4 var3val7">4</cell>
 
-<cell cellIdRefs="var1val11 var2val9 var3val3">26</cell>
-
-<cell cellIdRefs="var1val11 var2val9 var3val4">1</cell>
-
-<cell cellIdRefs="var1val11 var2val10 var3val1">50</cell>
-
-<cell cellIdRefs="var1val11 var2val10 var3val2">29</cell>
-
-<cell cellIdRefs="var1val11 var2val10 var3val3">21</cell>
-
-<cell cellIdRefs="var1val11 var2val10 var3val4">5</cell>
-
-<cell cellIdRefs="var1val11 var2val11 var3val1">52</cell>
-
-<cell cellIdRefs="var1val11 var2val11 var3val2">29</cell>
-
-<cell cellIdRefs="var1val11 var2val11 var3val3">35</cell>
-
-<cell cellIdRefs="var1val11 var2val11 var3val4">6</cell>
-
-<cell cellIdRefs="var1val11 var2val11 var3val5">2</cell>
-
-<cell cellIdRefs="var1val11 var2val12 var3val1">60</cell>
-
-<cell cellIdRefs="var1val11 var2val12 var3val2">33</cell>
-
-<cell cellIdRefs="var1val11 var2val12 var3val3">19</cell>
-
-<cell cellIdRefs="var1val11 var2val12 var3val4">7</cell>
-
-<cell cellIdRefs="var1val12 var2val1 var3val1">62</cell>
-
-<cell cellIdRefs="var1val12 var2val1 var3val2">56</cell>
-
-<cell cellIdRefs="var1val12 var2val1 var3val3">47</cell>
-
-<cell cellIdRefs="var1val12 var2val1 var3val4">2</cell>
-
-<cell cellIdRefs="var1val12 var2val2 var3val1">89</cell>
-
-<cell cellIdRefs="var1val12 var2val2 var3val2">67</cell>
-
-<cell cellIdRefs="var1val12 var2val2 var3val3">34</cell>
-
-<cell cellIdRefs="var1val12 var2val2 var3val4">5</cell>
-
-<cell cellIdRefs="var1val12 var2val3 var3val1">78</cell>
-
-<cell cellIdRefs="var1val12 var2val3 var3val2">48</cell>
-
-<cell cellIdRefs="var1val12 var2val3 var3val3">40</cell>
-
-<cell cellIdRefs="var1val12 var2val3 var3val4">1</cell>
-
-<cell cellIdRefs="var1val12 var2val4 var3val1">75</cell>
-
-<cell cellIdRefs="var1val12 var2val4 var3val2">57</cell>
-
-<cell cellIdRefs="var1val12 var2val4 var3val3">40</cell>
-
-<cell cellIdRefs="var1val12 var2val5 var3val1">101</cell>
-
-<cell cellIdRefs="var1val12 var2val5 var3val2">50</cell>
-
-<cell cellIdRefs="var1val12 var2val5 var3val3">35</cell>
-
-<cell cellIdRefs="var1val12 var2val5 var3val4">2</cell>
-
-<cell cellIdRefs="var1val12 var2val6 var3val1">73</cell>
-
-<cell cellIdRefs="var1val12 var2val6 var3val2">54</cell>
-
-<cell cellIdRefs="var1val12 var2val6 var3val3">36</cell>
-
-<cell cellIdRefs="var1val12 var2val6 var3val4">1</cell>
-
-<cell cellIdRefs="var1val12 var2val7 var3val1">76</cell>
-
-<cell cellIdRefs="var1val12 var2val7 var3val2">42</cell>
-
-<cell cellIdRefs="var1val12 var2val7 var3val3">41</cell>
-
-<cell cellIdRefs="var1val12 var2val7 var3val4">1</cell>
-
-<cell cellIdRefs="var1val12 var2val8 var3val1">78</cell>
-
-<cell cellIdRefs="var1val12 var2val8 var3val2">49</cell>
-
-<cell cellIdRefs="var1val12 var2val8 var3val3">21</cell>
-
-<cell cellIdRefs="var1val12 var2val8 var3val4">2</cell>
-
-<cell cellIdRefs="var1val12 var2val9 var3val1">47</cell>
-
-<cell cellIdRefs="var1val12 var2val9 var3val2">31</cell>
-
-<cell cellIdRefs="var1val12 var2val9 var3val3">21</cell>
-
-<cell cellIdRefs="var1val12 var2val9 var3val4">3</cell>
-
-<cell cellIdRefs="var1val12 var2val10 var3val1">93</cell>
-
-<cell cellIdRefs="var1val12 var2val10 var3val2">52</cell>
-
-<cell cellIdRefs="var1val12 var2val10 var3val3">38</cell>
-
-<cell cellIdRefs="var1val12 var2val10 var3val4">4</cell>
-
-<cell cellIdRefs="var1val12 var2val11 var3val1">48</cell>
-
-<cell cellIdRefs="var1val12 var2val11 var3val2">45</cell>
-
-<cell cellIdRefs="var1val12 var2val11 var3val3">45</cell>
-
-<cell cellIdRefs="var1val12 var2val11 var3val4">5</cell>
-
-<cell cellIdRefs="var1val12 var2val11 var3val5">1</cell>
-
-<cell cellIdRefs="var1val12 var2val12 var3val1">77</cell>
-
-<cell cellIdRefs="var1val12 var2val12 var3val2">58</cell>
-
-<cell cellIdRefs="var1val12 var2val12 var3val3">33</cell>
-
-<cell cellIdRefs="var1val12 var2val12 var3val4">4</cell>
+<cell cellIdRefs="var1val12 var2val5 var3val6">1</cell>
 
 </data>
 
