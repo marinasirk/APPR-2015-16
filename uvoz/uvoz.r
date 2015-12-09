@@ -31,9 +31,18 @@ razveze1 <- razveze1[-seq(1,nrow(razveze1),81),]
 razveze1 <- uredi(razveze1, 1, 2, 7)
 razveze1 <- razveze1[-seq(1,nrow(razveze1),8),]
 
+# Številske spremenljivke spremenimo v številske
+razveze1$STEVILO.RAZVEZ <- as.numeric(razveze1$STEVILO.RAZVEZ)
 
+pomurska <- filter(razveze1, REGIJA == "Pomurska")
+
+
+library(XML)
 # TABELA XML
 
-#xml <- file("podatki/razveze-otroci.xml") %>% readlines()
-
+xml <- file("podatki/razveze-otroci.xml") %>% readLines()
+razveze1 <- grep("var dataValues", xml, value = TRUE) %>%
+  strapplyc('var dataValues = "([^"]+)"') %>% .[[1]] %>%
+  strsplit("|", fixed = TRUE) %>% unlist() %>%
+  matrix(ncol=10, byrow=TRUE)
 
