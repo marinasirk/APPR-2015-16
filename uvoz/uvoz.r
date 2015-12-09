@@ -4,8 +4,6 @@ library(dplyr)
 library(gsubfn)
 
 # TABELA CSV  
-# Definiramo imena stolpcev
-stolpci <- c("REGIJA", "TRAJANJE ZAKONSKE ZVEZE", "LETO", "STEVILO RAZVEZ")
 
 # Funkcija, ki uvozi podatke iz datoteke druzine.csv  
 uvozi.razveze1 <- function() {
@@ -14,27 +12,24 @@ uvozi.razveze1 <- function() {
                    as.is = TRUE,
                    header = FALSE,
                    strip.white = TRUE,
-                   col.names = stolpci,
+                   col.names = c("REGIJA", "TRAJANJE ZAKONSKE ZVEZE", "LETO", "STEVILO RAZVEZ"),
                    fileEncoding = "UTF-8"))
   }
 
 
-# Funkcija, ki ponavlja vrednosti
+# Funkcija, ki ponavlja imena
 uredi <- function(tabela, x, y, z, max = nrow(tabela)) {
   s <- seq(x, max, z+1)
   tabela[t(matrix(x:max, ncol=length(s))), y] <- tabela[s, y]
   return(tabela)
 }
 
-# Uredimo tabelo, zapišemo ponovljene.
+# Uredimo tabelo, zapišemo ponovljena imena in zbrišemo vrstice brez vrednosti.
 razveze1 <- uvozi.razveze1()
-
 razveze1 <- uredi(razveze1, 1, 1, 80)
 razveze1 <- razveze1[-seq(1,nrow(razveze1),81),]
 razveze1 <- uredi(razveze1, 1, 2, 7)
 razveze1 <- razveze1[-seq(1,nrow(razveze1),8),]
-
-# Uredimo tabelo
 
 
 # TABELA XML
