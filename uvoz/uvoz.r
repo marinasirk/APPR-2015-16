@@ -1,20 +1,31 @@
 # 2. faza: Uvoz podatkov
 
-# Funkcija, ki uvozi podatke iz datoteke druzine.csv
-uvozi.druzine <- function() {
-  return(read.table("podatki/druzine.csv", sep = ";", as.is = TRUE,
-                      row.names = 1,
-                      col.names = c("obcina", "en", "dva", "tri", "stiri"),
-                      fileEncoding = "Windows-1250"))
-}
+library(dplyr)
+library(gsubfn)
 
-# Zapišimo podatke v razpredelnico druzine.
-druzine <- uvozi.druzine()
+# TABELA CSV  
+# Definiramo imena stolpcev
+stolpci <- c("REGIJA", "TRAJANJE ZAKONSKE ZVEZE", "LETO", "STEVILO RAZVEZ")
 
-obcine <- uvozi.obcine()
+# Funkcija, ki uvozi podatke iz datoteke druzine.csv  
+uvozi.razveze1 <- function() {
+  return(read.csv2("podatki/razveze-trajanje.csv",
+                   skip = 3,
+                   as.is = TRUE,
+                   header = FALSE,
+                   strip.white = TRUE,
+                   col.names = stolpci,
+                   fileEncoding = "UTF-8"))
+  }
 
-# Če bi imeli več funkcij za uvoz in nekaterih npr. še ne bi
-# potrebovali v 3. fazi, bi bilo smiselno funkcije dati v svojo
-# datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
-# 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
-# fazah.
+# Zapišimo podatke v razpredelnico razveze1.
+razveze1 <- uvozi.razveze1()
+
+# Uredimo tabelo
+
+
+# TABELA XML
+
+#xml <- file("podatki/razveze-otroci.xml") %>% readlines()
+
+
