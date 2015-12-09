@@ -18,14 +18,17 @@ uvozi.razveze1 <- function() {
                    fileEncoding = "UTF-8"))
   }
 
+
+# Funkcija, ki ponavlja vrednosti
 uredi <- function(tabela, x, y, z, max = nrow(tabela)) {
   s <- seq(x, max, z+1)
   tabela[t(matrix(x:max, ncol=length(s))), y] <- tabela[s, y]
   return(tabela)
 }
 
-# Zapišimo podatke v razpredelnico razveze1.
+# Uredimo tabelo, zapišemo ponovljene.
 razveze1 <- uvozi.razveze1()
+
 razveze1 <- uredi(razveze1, 1, 1, 80)
 razveze1 <- razveze1[-seq(1,nrow(razveze1),81),]
 razveze1 <- uredi(razveze1, 1, 2, 7)
