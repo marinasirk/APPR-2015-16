@@ -2,6 +2,7 @@
 
 library(dplyr)
 library(gsubfn)
+require(ggplot2)
 
 # TABELA CSV  
 
@@ -44,15 +45,20 @@ vsote <- c(filter(razveze1, REGIJA == "Pomurska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Savinjska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Zasavska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Spodnjeposavska")$STEVILO.RAZVEZ %>% sum(),
-           filter(razveze1, REGIJA == "JV Slovenija")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Jugovzhodna Slovenija")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Osrednjeslovenska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Gorenjska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Notranjsko-kraška")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Goriška")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Obalno-kraška")$STEVILO.RAZVEZ %>% sum() )
-vsota <- data.frame(regije, vsote)
 
-# Nariši graf !!!
+odstotki <- round(vsote/sum(vsote)*100, 2)
+
+vsota <- data.frame(regije, vsote, odstotki)
+
+# Nariši graf do konca !
+ggplot(vsota, aes(x=regije, y=odstotki, color=odstotki)) + geom_point()
+
 
 # Skupno število ločitev glede na trajanje
 st.let <- c("do 1", "1", "2", "3", "4", "5-9", "10-14", "15-19", "20-24", "25 ali več")
@@ -68,9 +74,12 @@ st.razvez <- c(filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "do 1 leta")$STEVILO.
                filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "20-24 let")$STEVILO.RAZVEZ %>% sum(),
                filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "25 ali več let")$STEVILO.RAZVEZ %>% sum())
 
-trajanje <- data.frame(st.let, st.razvez)
+odstotki <- round(st.razvez/sum(vsote)*100, 2)
+
+trajanje <- data.frame(st.let, st.razvez, odstotki)
 
 # Nariši graf !!!
+ggplot(trajanje, aes(x=st.let, y=odstotki)) + geom_point()
 
 
 
