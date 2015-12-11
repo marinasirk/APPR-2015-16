@@ -34,7 +34,44 @@ razveze1 <- razveze1[-seq(1,nrow(razveze1),8),]
 # Številske spremenljivke spremenimo v številske
 razveze1$STEVILO.RAZVEZ <- as.numeric(razveze1$STEVILO.RAZVEZ)
 
-pomurska <- filter(razveze1, REGIJA == "Pomurska")
+# Skupno število ločitev po regijah (2008-2014)
+regije <- c("Pomurska", "Podravska", "Koroška", "Savinjska", "Zasavska", "Spodnjeposavska","JV Slovenija",
+            "Osrednjeslovenska", "Gorenjska", "Notranjsko-kraška", "Goriška", "Obalno-kraška")
+
+vsote <- c(filter(razveze1, REGIJA == "Pomurska")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Podravska")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Koroška")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Savinjska")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Zasavska")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Spodnjeposavska")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "JV Slovenija")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Osrednjeslovenska")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Gorenjska")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Notranjsko-kraška")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Goriška")$STEVILO.RAZVEZ %>% sum(),
+           filter(razveze1, REGIJA == "Obalno-kraška")$STEVILO.RAZVEZ %>% sum() )
+vsota <- data.frame(regije, vsote)
+
+# Nariši graf !!!
+
+# Skupno število ločitev glede na trajanje
+st.let <- c("do 1", "1", "2", "3", "4", "5-9", "10-14", "15-19", "20-24", "25 ali več")
+
+st.razvez <- c(filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "do 1 leta")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "1 leto")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "2 leti")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "3 leta")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "4 leta")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "5-9 let")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "10-14 let")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "15-19 let")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "20-24 let")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "25 ali več let")$STEVILO.RAZVEZ %>% sum())
+
+trajanje <- data.frame(st.let, st.razvez)
+
+# Nariši graf !!!
+
 
 
 library(XML)
