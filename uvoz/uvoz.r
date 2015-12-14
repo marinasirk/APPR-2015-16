@@ -93,6 +93,9 @@ razveze2 <- html %>% html_nodes(xpath="//table[1]") %>% .[[1]] %>% html_table(fi
 Encoding(razveze2[[1]]) <- "UTF-8"
 razveze2 <- t(apply(razveze2, 1, function(x) c(rep(NA, sum(is.na(x))), x[!is.na(x)])))
 razveze2 <- razveze2[-nrow(razveze2),]
+#colnames(razveze2, "regija", "stevilo otrok", "leto", "stevilo razvez")
 
 razveze2 <- uredi(razveze2, 1, 1, 34)
 razveze2 <- uredi(razveze2, 1, 2, 6)
+
+
