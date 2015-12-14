@@ -3,6 +3,7 @@
 library(dplyr)
 library(gsubfn)
 require(ggplot2)
+library(rvest)
 
 # TABELA CSV  
 
@@ -78,17 +79,20 @@ odstotki <- round(st.razvez/sum(vsote)*100, 2)
 
 trajanje <- data.frame(st.let, st.razvez, odstotki)
 
-# Nariši graf !!!
+# Nariši graf do konca!
 ggplot(trajanje, aes(x=st.let, y=odstotki)) + geom_point()
 
 
 
-library(XML)
-# TABELA XML
 
-xml <- file("podatki/razveze-otroci.xml") %>% readLines()
-razveze1 <- grep("var dataValues", xml, value = TRUE) %>%
-  strapplyc('var dataValues = "([^"]+)"') %>% .[[1]] %>%
-  strsplit("|", fixed = TRUE) %>% unlist() %>%
-  matrix(ncol=10, byrow=TRUE)
+# TABELA HTML
 
+html <- file("podatki/razveze-st-otrok.html") %>% read_html()
+
+razveze2 <- html %>% html_nodes(xpath="//table[1]") %>% .[[1]] %>% html_table(fill = TRUE)
+Encoding(razveze2[[1]]) <- "UTF-8"
+razveze2 <- t(apply(razveze2, 1, function(x) c(rep(NA, sum(is.na(x))), x[!is.na(x)])))
+razveze2 <- razveze2[-nrow(razveze2),]
+
+razveze2 <- uredi(razveze2, 1, 1, 34)
+razveze2 <- uredi(razveze2, 1, 2, 6)
