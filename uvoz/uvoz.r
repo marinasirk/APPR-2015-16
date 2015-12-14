@@ -93,9 +93,26 @@ razveze2 <- html %>% html_nodes(xpath="//table[1]") %>% .[[1]] %>% html_table(fi
 Encoding(razveze2[[1]]) <- "UTF-8"
 razveze2 <- t(apply(razveze2, 1, function(x) c(rep(NA, sum(is.na(x))), x[!is.na(x)])))
 razveze2 <- razveze2[-nrow(razveze2),]
-#colnames(razveze2, "regija", "stevilo otrok", "leto", "stevilo razvez")
+
+# names(razveze2) <- c("REGIJA", "ST.OTROK", "LETO", "STEVILO.RAZVEZ")
+
+
+razveze2[,4] <- as.numeric(razveze2[,4])
 
 razveze2 <- uredi(razveze2, 1, 1, 34)
 razveze2 <- uredi(razveze2, 1, 2, 6)
 
+# st.otrok <- c(filter(razveze2, REGIJA == "Pomurska")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Podravska")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Koroška")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Savinjska")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Zasavska")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Spodnjeposavska")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Jugovzhodna Slovenija")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Osrednjeslovenska")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Gorenjska")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Notranjsko-kraška")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Goriška")$STEVILO.RAZVEZ %>% sum(),
+#               filter(razveze2, REGIJA == "Obalno-kraška")$STEVILO.RAZVEZ %>% sum() )
 
+#otroci <- data.frame(regije, st.otrok)
