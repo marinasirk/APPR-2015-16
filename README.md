@@ -6,7 +6,7 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2015/16.
 
 ## Tematika
 
-V projektu bom analizirala podatke razvez zakonskih zvez od leta 2008 do 2014 glede na regije.Podatke sem dobila s Statističnega urada RS. Prva tabela (v obliki CSV) vsebuje podatke o trajanju zakonske zveze, druga tabela (v obliki XML) pa o številu vzdrževanih otrok.
+V projektu bom analizirala podatke razvez zakonskih zvez od leta 2008 do 2014 glede na regije.Podatke sem dobila s Statističnega urada RS. Prva tabela (v obliki CSV) vsebuje podatke o trajanju zakonske zveze, druga tabela (v obliki HTML) pa o številu vzdrževanih otrok.
 
 Povezavi do tabel:
 * http://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=05M4008S&ti=&path=../Database/Dem_soc/05_prebivalstvo/36_Razveze/10_05M40_razveze-RE-OBC/&lang=2
