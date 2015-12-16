@@ -34,7 +34,7 @@ Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki 
 z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice}
-kable(head(razveze1))
+head(razveze1)
 head(razveze2)
 ```
 
