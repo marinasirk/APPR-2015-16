@@ -33,7 +33,7 @@ source("uvoz/uvoz.r", encoding = "UTF-8")
 Uvozili smo podatke o občinah v obliki CSV in HTML s statističnega urada. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice}
-kable(head(druzine))
+head(druzine)
 head(obcine)
 ```
 
