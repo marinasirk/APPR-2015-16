@@ -30,12 +30,16 @@ Moj cilj je ugotoviti, kako na razveze vpliva trajanje zakonskih zvez in števil
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
+Uvozili smo podatke o občinah v obliki CSV in HTML s statističnega urada. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice}
+<<<<<<< HEAD
 head(razveze1)
 head(razveze2)
+=======
+head(druzine)
+head(obcine)
+>>>>>>> b256067e23b6fcd7d9cbe2aa2d6cc51f64bbc834
 ```
 
 Tabeli imata štiri stolpce. Število razvez je v obeh razdeljeno glede na regije in leto, v prvi je odvisno še od trajanja zakonske zveze, v drugi pa od števila otrok.
@@ -47,8 +51,12 @@ Trajanje zakonske zveze je razdeljeno na deset obdobij; do 1 leta, 1 leto, 2 let
 
 Število otrok pa je razdeljeno na 5 razdelkov; brez otrok, eden, dva, trije, štirje ali več.
 
+<<<<<<< HEAD
 
 Slika \ref{fig:histogram} prikazuje porazdelitev števila razvez v regijah.
+=======
+Slika \ref{fig:histogram} prikazuje porazdelitev števila naselij v občinah.
+>>>>>>> b256067e23b6fcd7d9cbe2aa2d6cc51f64bbc834
 
 ```{r histogram, echo=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
 hist(obcine[,4], main = "Pogostost števila naselij",
