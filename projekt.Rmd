@@ -1,6 +1,6 @@
 ---
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
-author: "Študent FMF"
+author: "Marina Sirk"
 output:
   pdf_document:
     latex_engine: xelatex
@@ -19,7 +19,8 @@ source("lib/libraries.r", encoding = "UTF-8")
 
 # Izbira teme
 
-Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
+V projektu bom analizirala podatke razvez zakonskih zvez od leta 2008 do 2014 glede na regije.Podatke sem dobila s Statističnega urada RS. Prva tabela (v obliki CSV) vsebuje podatke o trajanju zakonske zveze, druga tabela (v obliki HTML) pa o številu vzdrževanih otrok.
+Moj cilj je ugotoviti, kako na razveze vpliva trajanje zakonskih zvez in število otrok ter kje so ločitve najpogostejše.
 
 ***
 
@@ -29,13 +30,21 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 source("uvoz/uvoz.r", encoding = "UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Poglejmo si začetka obeh uvoženih razpredelnic.
+Uvozili smo podatke o občinah v obliki CSV in HTML s statističnega urada. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice}
 kable(head(druzine))
 head(obcine)
 ```
+
+Tabeli imata štiri stolpce. Število razvez je v obeh razdeljeno glede na regije in leto, v prvi je odvisno še od trajanja zakonske zveze, v drugi pa od števila otrok.
+
+Regij je dvanajst, in sicer: Pomurska, Podravska, Koroška, Savinjska, Zasavska, Spodnjeposavska, Jugovzhodna Slovenija,
+Osrednjeslovenska, Gorenjska, Notranjsko-kraška, Goriška, Obalno-kraška.
+
+Trajanje zakonske zveze je razdeljeno na deset obdobij; do 1 leta, 1 leto, 2 leti, 3 leta, 4 leta, 5-9 let, 10-14 let, 15-19 let, 20-24 let in 25 ali več let.
+
+Število otrok pa je razdeljeno na 5 razdelkov; brez otrok, eden, dva, trije, štirje ali več.
 
 Slika \ref{fig:histogram} prikazuje porazdelitev števila naselij v občinah.
 
