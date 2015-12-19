@@ -94,7 +94,7 @@ html <- file("podatki/razveze-st-otrok.html") %>% read_html()
 
 razveze2 <- html %>% html_nodes(xpath="//table[1]") %>% .[[1]] %>% html_table(fill = TRUE) %>% data.frame()
 Encoding(razveze2[[1]]) <- "UTF-8"
-razveze2 <- t(apply(razveze2, 1, function(x) c(rep(NA, sum(is.na(x))), x[!is.na(x)])))
+razveze2 <- t(apply(razveze2, 1, function(x) c(rep(NA, sum(is.na(x))), x[!is.na(x)]))) %>% data.frame(stringsAsFactors = FALSE)
 razveze2 <- razveze2[-nrow(razveze2),]
 
 colnames(razveze2) <- c("REGIJA", "ST.OTROK", "LETO", "STEVILO.RAZVEZ")
@@ -105,10 +105,12 @@ razveze2[,4] <- as.numeric(razveze2[,4])
 razveze2 <- uredi(razveze2, 1, 1, 34)
 razveze2 <- uredi(razveze2, 1, 2, 6)
 
-st.otrok <- c(filter(razveze2, ST.OTROK == "Brez otrok")$STEVILO.RAZVEZ %>% sum(),
+ST.OTROK <- c("Brez otrok", "Eden", "Dva", "Trije", "Štirje ali več")
+
+ST.RAZVEZ <- c(filter(razveze2, ST.OTROK == "Brez otrok")$STEVILO.RAZVEZ %>% sum(),
               filter(razveze2, ST.OTROK == "Eden")$STEVILO.RAZVEZ %>% sum(),
               filter(razveze2, ST.OTROK == "Dva")$STEVILO.RAZVEZ %>% sum(),
               filter(razveze2, ST.OTROK == "Trije")$STEVILO.RAZVEZ %>% sum(),
               filter(razveze2, ST.OTROK == "Štirje ali več")$STEVILO.RAZVEZ %>% sum() )
 
-otroci <- data.frame(regije, st.otrok)
+otroci <- data.frame(ST.OTROK, ST.RAZVEZ)
