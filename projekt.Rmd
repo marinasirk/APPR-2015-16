@@ -54,5 +54,5 @@ ggplot(trajanje, aes(x=st.let, y=odstotki)) + geom_point()
 
 Drugi graf \ref{fig:graf2} pa prikazuje število ločitev glede na število otrok.
 ```{r graf2, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na število otrok'}
-ggplot(trajanje, aes(x=st.let, y=odstotki)) + geom_point()
+ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, color=ODSTOTKI)) + geom_point()
 ```
