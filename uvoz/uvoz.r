@@ -60,7 +60,7 @@ odstotki <- round(vsote/sum(vsote)*100, 2)
 
 vsota <- data.frame(regije, vsote, odstotki)
 
-# Nariši graf do konca !
+# Graf števila razvez glede na trajanje
 ggplot(vsota, aes(x=regije, y=odstotki, color=odstotki)) + geom_point()
 
 
@@ -82,7 +82,7 @@ odstotki <- round(st.razvez/sum(vsote)*100, 2)
 
 trajanje <- data.frame(st.let, st.razvez, odstotki)
 
-# Nariši graf do konca!
+# Graf števila razvez glede na število otrok
 ggplot(trajanje, aes(x=st.let, y=odstotki)) + geom_point()
 
 
