@@ -53,7 +53,7 @@ odstotki <- round(vsote/sum(vsote)*100, 2)
 
 vsota <- data.frame(regije, vsote, odstotki)
 
-# Graf števila razvez glede na trajanje
+# Graf števila razvez glede na regije
 ggplot(vsota, aes(x=regije, y=odstotki, color=odstotki)) + geom_point()
 
 
@@ -75,8 +75,8 @@ odstotki <- round(st.razvez/sum(vsote)*100, 2)
 
 trajanje <- data.frame(st.let, st.razvez, odstotki)
 
-# Graf števila razvez glede na število otrok
-ggplot(trajanje, aes(x=st.let, y=odstotki)) + geom_point()
+# Graf števila razvez glede na trajanje zakonske zveze
+ggplot(trajanje, aes(x=st.let, y=odstotki, color=odstotki)) + geom_point()
 
 
 
@@ -106,4 +106,9 @@ ST.RAZVEZ <- c(filter(razveze2, ST.OTROK == "Brez otrok")$STEVILO.RAZVEZ %>% sum
               filter(razveze2, ST.OTROK == "Trije")$STEVILO.RAZVEZ %>% sum(),
               filter(razveze2, ST.OTROK == "Štirje ali več")$STEVILO.RAZVEZ %>% sum() )
 
-otroci <- data.frame(ST.OTROK, ST.RAZVEZ)
+ODSTOTKI <- round(ST.RAZVEZ/sum(vsote)*100, 2)
+
+otroci <- data.frame(ST.OTROK, ST.RAZVEZ, ODSTOTKI)
+
+# Graf števila razvez glede na število otrok
+ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, color=ODSTOTKI)) + geom_point()
