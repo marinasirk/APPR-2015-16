@@ -1,12 +1,5 @@
 # 2. faza: Uvoz podatkov
 
-library(dplyr)
-library(gsubfn)
-library(ggplot2)
-library(rvest)
-library(XML)
-
-
 
 # TABELA CSV  
 
