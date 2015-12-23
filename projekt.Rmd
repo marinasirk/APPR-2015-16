@@ -1,11 +1,12 @@
 ---
-title: "ANALIZA ŠTEVILA ZAKONSKIH ZVEZ V SLOVENIJI"
+title: "ANALIZA ŠTEVILA ZAKONSKIH RAZVEZ V SLOVENIJI"
 author: "Marina Sirk"
 output:
+  html_document: default
   pdf_document:
-    latex_engine: xelatex
     includes:
       in_header: lib/styles.sty
+    latex_engine: xelatex
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
