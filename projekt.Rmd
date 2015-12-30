@@ -38,22 +38,31 @@ head(razveze2)
 
 Tabeli imata štiri stolpce. Število razvez je v obeh razdeljeno glede na regije in leto, v prvi je odvisno še od trajanja zakonske zveze, v drugi pa od števila otrok.
 
-Regij je dvanajst, in sicer: Pomurska, Podravska, Koroška, Savinjska, Zasavska, Spodnjeposavska, Jugovzhodna Slovenija,
-Osrednjeslovenska, Gorenjska, Notranjsko-kraška, Goriška, Obalno-kraška.
+* Regij je dvanajst, in sicer: Pomurska, Podravska, Koroška, Savinjska, Zasavska, Spodnjeposavska, Jugovzhodna Slovenija, Osrednjeslovenska, Gorenjska, Notranjsko-kraška, Goriška, Obalno-kraška.
 
-Trajanje zakonske zveze je razdeljeno na deset obdobij; do 1 leta, 1 leto, 2 leti, 3 leta, 4 leta, 5-9 let, 10-14 let, 15-19 let, 20-24 let in 25 ali več let.
+* Število razvez je šteto od leta 2008 do vključno leta 2014.
 
-Število otrok pa je razdeljeno na 5 razdelkov; brez otrok, eden, dva, trije, štirje ali več.
+* Trajanje zakonske zveze je razdeljeno na deset obdobij; do 1 leta, 1 leto, 2 leti, 3 leta, 4 leta, 5-9 let, 10-14 let, 15-19 let, 20-24 let in 25 ali več let.
+
+* Število otrok pa je razdeljeno na 5 razdelkov; brez otrok, eden, dva, trije, štirje ali več.
+
+* Zadnji stolpec je pri obeh tabelah število razvez.
+
+Prva tabela ima 840 podatkov, druga pa 420.
 
 Oglejmo si še dva grafa.
 
-Prvi graf \ref{fig:graf1} prikazuje porazdelitev števila razvez glede na trajanje zakonske zveze.
+
+* Prvi graf \ref{fig:graf1} prikazuje porazdelitev števila razvez glede na trajanje zakonske zveze.
 
 ```{r graf1, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na trajanje zakonske zveze'}
-ggplot(trajanje, aes(x=st.let, y=odstotki)) + geom_point()
+ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
 ```
 
-Drugi graf \ref{fig:graf2} pa prikazuje število ločitev glede na število otrok.
+Z grafa lahko razberemo, da se največ ločitev zgodi po 25 letih skupnega življenja, kar se mi zdi precej nenavadno. 
+
+* Drugi graf \ref{fig:graf2} pa prikazuje število ločitev glede na število otrok.
+
 ```{r graf2, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na število otrok'}
-ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, color=ODSTOTKI)) + geom_point()
+ggplot(otroci, aes(x=ST.OTROK, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
 ```
