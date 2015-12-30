@@ -1,5 +1,12 @@
 # 2. faza: Uvoz podatkov
 
+library(knitr)
+library(dplyr)
+library(gsubfn)
+library(ggplot2)
+library(rvest)
+library(XML)
+
 
 # TABELA CSV  
 
@@ -29,14 +36,16 @@ razveze1 <- razveze1[-seq(1,nrow(razveze1),81),]
 razveze1 <- uredi(razveze1, 1, 2, 7)
 razveze1 <- razveze1[-seq(1,nrow(razveze1),8),]
 
+row.names(razveze1) <- c(1:840)
+                         
 # Številske spremenljivke spremenimo v številske
 razveze1$STEVILO.RAZVEZ <- as.numeric(razveze1$STEVILO.RAZVEZ)
 
 # Skupno število ločitev po regijah (2008-2014)
-regije <- c("Pomurska", "Podravska", "Koroška", "Savinjska", "Zasavska", "Spodnjeposavska","JV Slovenija",
+REGIJE <- c("Pomurska", "Podravska", "Koroška", "Savinjska", "Zasavska", "Spodnjeposavska","JV Slovenija",
             "Osrednjeslovenska", "Gorenjska", "Notranjsko-kraška", "Goriška", "Obalno-kraška")
 
-vsote <- c(filter(razveze1, REGIJA == "Pomurska")$STEVILO.RAZVEZ %>% sum(),
+VSOTE <- c(filter(razveze1, REGIJA == "Pomurska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Podravska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Koroška")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Savinjska")$STEVILO.RAZVEZ %>% sum(),
@@ -49,18 +58,18 @@ vsote <- c(filter(razveze1, REGIJA == "Pomurska")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Goriška")$STEVILO.RAZVEZ %>% sum(),
            filter(razveze1, REGIJA == "Obalno-kraška")$STEVILO.RAZVEZ %>% sum() )
 
-odstotki <- round(vsote/sum(vsote)*100, 2)
+ODSTOTKI <- round(VSOTE/sum(VSOTE)*100, 2)
 
-vsota <- data.frame(regije, vsote, odstotki)
+vsota <- data.frame(REGIJE, VSOTE, ODSTOTKI)
 
 # Graf števila razvez glede na regije
-ggplot(vsota, aes(x=regije, y=odstotki, color=odstotki)) + geom_point()
+ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
 
 
 # Skupno število ločitev glede na trajanje
-st.let <- c("do 1", "1", "2", "3", "4", "5-9", "10-14", "15-19", "20-24", "25 ali več")
+ST.LET <- c("do 1", "1", "2", "3", "4", "5-9", "10-14", "15-19", "20-24", "25 ali več")
 
-st.razvez <- c(filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "do 1 leta")$STEVILO.RAZVEZ %>% sum(),
+ST.RAZVEZ <- c(filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "do 1 leta")$STEVILO.RAZVEZ %>% sum(),
                filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "1 leto")$STEVILO.RAZVEZ %>% sum(),
                filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "2 leti")$STEVILO.RAZVEZ %>% sum(),
                filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "3 leta")$STEVILO.RAZVEZ %>% sum(),
@@ -71,12 +80,12 @@ st.razvez <- c(filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "do 1 leta")$STEVILO.
                filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "20-24 let")$STEVILO.RAZVEZ %>% sum(),
                filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "25 ali več let")$STEVILO.RAZVEZ %>% sum())
 
-odstotki <- round(st.razvez/sum(vsote)*100, 2)
+ODSTOTKI <- round(ST.RAZVEZ/sum(VSOTE)*100, 2)
 
-trajanje <- data.frame(st.let, st.razvez, odstotki)
+trajanje <- data.frame(ST.LET, ST.RAZVEZ, ODSTOTKI)
 
 # Graf števila razvez glede na trajanje zakonske zveze
-ggplot(trajanje, aes(x=st.let, y=odstotki, color=odstotki)) + geom_point()
+ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
 
 
 
@@ -106,7 +115,7 @@ ST.RAZVEZ <- c(filter(razveze2, ST.OTROK == "Brez otrok")$STEVILO.RAZVEZ %>% sum
               filter(razveze2, ST.OTROK == "Trije")$STEVILO.RAZVEZ %>% sum(),
               filter(razveze2, ST.OTROK == "Štirje ali več")$STEVILO.RAZVEZ %>% sum() )
 
-ODSTOTKI <- round(ST.RAZVEZ/sum(vsote)*100, 2)
+ODSTOTKI <- round(ST.RAZVEZ/sum(VSOTE)*100, 2)
 
 otroci <- data.frame(ST.OTROK, ST.RAZVEZ, ODSTOTKI)
 
