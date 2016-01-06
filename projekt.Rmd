@@ -69,10 +69,13 @@ Oglejmo si še dva grafa.
 ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
 ```
 
-Z grafa lahko razberemo, da se največ ločitev zgodi po 25 letih skupnega življenja, kar se mi zdi precej nenavadno. 
+Z grafa lahko razberemo, da se največ ločitev zgodi po 25 letih skupnega življenja. Zdi se mi precej nenavadno, da se par odloči raziti po tolikih skupnih letih. Morda je razlog naveličanost eden drugega ali pa so zaradi otrok vztrajajo pri zvezi, nato pa se ločijo, ko ti odrastejo.
+
+Druge najpogostejše ločitve pa so v obdobju od 5 do 10 let trajanja zakonske zveze. To dejstvo se mi zdi kar smiselno, saj po približno 5 letih zares spoznaš svojega partnerja in se odločiš o vztrajanju v zakonski zvezi. Ta rezultat sem pričakovala, da bo največji, ampak ni, je pa zelo blizu prvemu.
 
 * Drugi graf \ref{fig:graf3} pa prikazuje število ločitev glede na število otrok.
 
 ```{r graf3, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na število otrok'}
 ggplot(otroci, aes(x=ST.OTROK, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
 ```
+Kot lahko vidimo, je največ ločitev
