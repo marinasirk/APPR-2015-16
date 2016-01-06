@@ -4,6 +4,8 @@ library(gsubfn)
 library(ggplot2)
 library(rvest)
 library(XML)
+library(sp)
+library(maptools)
 
 # Uvozimo funkcije za delo z datotekami XML.
 source("lib/xml.r", encoding = "UTF-8")
