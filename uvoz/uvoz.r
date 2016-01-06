@@ -63,8 +63,7 @@ ODSTOTKI <- round(VSOTE/sum(VSOTE)*100, 2)
 vsota <- data.frame(REGIJE, VSOTE, ODSTOTKI)
 
 # Graf števila razvez glede na regije
-ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
-
+ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity")
 
 # Skupno število ločitev glede na trajanje
 ST.LET <- c("do 1", "1", "2", "3", "4", "5-9", "10-14", "15-19", "20-24", "25 ali več")
@@ -86,8 +85,6 @@ trajanje <- data.frame(ST.LET = factor(ST.LET, levels = ST.LET, ordered = TRUE),
 
 # Graf števila razvez glede na trajanje zakonske zveze
 ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity")
-
-
 
 
 # TABELA HTML
@@ -117,7 +114,7 @@ ST.RAZVEZ <- c(filter(razveze2, ST.OTROK == "Brez otrok")$STEVILO.RAZVEZ %>% sum
 
 ODSTOTKI <- round(ST.RAZVEZ/sum(VSOTE)*100, 2)
 
-otroci <- data.frame(ST.OTROK, ST.RAZVEZ, ODSTOTKI)
+otroci <- data.frame(ST.OTROK = factor(ST.OTROK, levels = ST.OTROK, ordered = TRUE), ST.RAZVEZ, ODSTOTKI)
 
 # Graf števila razvez glede na število otrok
-ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, color=ODSTOTKI)) + geom_point()
+ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, fill=ODSTOTKI)) + geom_bar(stat = "identity")
