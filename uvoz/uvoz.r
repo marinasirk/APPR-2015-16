@@ -82,10 +82,10 @@ ST.RAZVEZ <- c(filter(razveze1, TRAJANJE.ZAKONSKE.ZVEZE == "do 1 leta")$STEVILO.
 
 ODSTOTKI <- round(ST.RAZVEZ/sum(VSOTE)*100, 2)
 
-trajanje <- data.frame(ST.LET, ST.RAZVEZ, ODSTOTKI)
+trajanje <- data.frame(ST.LET = factor(ST.LET, levels = ST.LET, ordered = TRUE), ST.RAZVEZ, ODSTOTKI)
 
 # Graf števila razvez glede na trajanje zakonske zveze
-ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
+ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity")
 
 
 
