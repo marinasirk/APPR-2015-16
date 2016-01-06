@@ -38,15 +38,15 @@ head(razveze2)
 
 Tabeli imata štiri stolpce. Število razvez je v obeh razdeljeno glede na regije in leto, v prvi je odvisno še od trajanja zakonske zveze, v drugi pa od števila otrok.
 
-* Regij je dvanajst, in sicer: Pomurska, Podravska, Koroška, Savinjska, Zasavska, Spodnjeposavska, Jugovzhodna Slovenija, Osrednjeslovenska, Gorenjska, Notranjsko-kraška, Goriška, Obalno-kraška.
+* Regij je dvanajst, in sicer: Pomurska, Podravska, Koroška, Savinjska, Zasavska, Spodnjeposavska, Jugovzhodna Slovenija, Osrednjeslovenska, Gorenjska, Notranjsko-kraška, Goriška, Obalno-kraška. Ta spremenljivka je imenska.
 
-* Število razvez je šteto od leta 2008 do vključno leta 2014.
+* Število razvez je šteto od leta 2008 do vključno leta 2014 in je številska spremenljivka.
 
-* Trajanje zakonske zveze je razdeljeno na deset obdobij; do 1 leta, 1 leto, 2 leti, 3 leta, 4 leta, 5-9 let, 10-14 let, 15-19 let, 20-24 let in 25 ali več let.
+* Trajanje zakonske zveze je razdeljeno na deset obdobij; do 1 leta, 1 leto, 2 leti, 3 leta, 4 leta, 5-9 let, 10-14 let, 15-19 let, 20-24 let in 25 ali več let. To je urejenostna spremenljivka.
 
-* Število otrok pa je razdeljeno na 5 razdelkov; brez otrok, eden, dva, trije, štirje ali več.
+* Število otrok pa je razdeljeno na 5 razdelkov; brez otrok, eden, dva, trije, štirje ali več. Tudi ta spremenljivka je urejenostna.
 
-* Zadnji stolpec je pri obeh tabelah število razvez.
+* Zadnji stolpec je pri obeh tabelah število razvez in je številska spremenljivka.
 
 Prva tabela ima 840 podatkov, druga pa 420.
 
