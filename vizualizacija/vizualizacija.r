@@ -21,7 +21,15 @@ pretvori.zemljevid <- function(zemljevid) {
 
 # Regije na zemljevidu
 
-zemljevid$razveze <- zemljevid1$ODSTOTKI
+zemljevid$razveze.odstotki <- zemljevid1$ODSTOTKI
 zemljevid2 <- pretvori.zemljevid(zemljevid)
 
+# Zemljevid:
+
+vsota.zemljevid <- ggplot() + geom_polygon(data = zemljevid2, aes(x=long, y=lat, group=group,
+                                                         fill=razveze.odstotki),color = "grey30") +
+  scale_fill_gradient(low="cyan", high="cyan4") +
+  guides(fill = guide_colorbar(title = "Porazdelitev števila razvez po regijah"))
+
+print(vsota.zemljevid)
 
