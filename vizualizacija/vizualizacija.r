@@ -31,5 +31,5 @@ vsota.zemljevid <- ggplot() + geom_polygon(data = zemljevid2, aes(x=long, y=lat,
   scale_fill_gradient(low="cyan", high="cyan4") +
   guides(fill = guide_colorbar(title = "Porazdelitev števila razvez po regijah"))
 
-print(vsota.zemljevid)
+# print(vsota.zemljevid)
 
