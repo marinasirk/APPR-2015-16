@@ -123,3 +123,25 @@ ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, fill=ODSTOTKI)) + geom_bar(stat = "id
 
 
 # Tabela razdelitve števila ločitev po letih - MANJKA!
+
+LETO <- c("2008", "2009", "2010", "2011", "2012", "2013", "2014")
+
+STEVILO.RAZVEZ <- c(filter(razveze2, LETO=="2008")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze2, LETO=="2009")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze2, LETO=="2010")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze2, LETO=="2011")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze2, LETO=="2012")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze2, LETO=="2013")$STEVILO.RAZVEZ %>% sum(),
+               filter(razveze2, LETO=="2014")$STEVILO.RAZVEZ %>% sum() )
+
+razveze3 <- data.frame(LETO, STEVILO.RAZVEZ)
+
+STEVILO.RAZVEZ <- c(filter(razveze1, LETO=="2008")$STEVILO.RAZVEZ %>% sum(),
+                    filter(razveze1, LETO=="2009")$STEVILO.RAZVEZ %>% sum(),
+                    filter(razveze1, LETO=="2010")$STEVILO.RAZVEZ %>% sum(),
+                    filter(razveze1, LETO=="2011")$STEVILO.RAZVEZ %>% sum(),
+                    filter(razveze1, LETO=="2012")$STEVILO.RAZVEZ %>% sum(),
+                    filter(razveze1, LETO=="2013")$STEVILO.RAZVEZ %>% sum(),
+                    filter(razveze1, LETO=="2014")$STEVILO.RAZVEZ %>% sum() )
+
+razveze4 <- data.frame(LETO, STEVILO.RAZVEZ)
