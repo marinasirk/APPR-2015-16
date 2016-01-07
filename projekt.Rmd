@@ -52,32 +52,50 @@ Prva tabela ima 840 podatkov, druga pa 420.
 
 Da sem dobila obe tabeli v tidy obliki, sem morala najprej vsa prazna mesta v tabeli zapolniti. To sem naredila tako da sem najprej v prvem stolpcu kopirala manjkajoče vrednosti, enako sem naredila še za drugi stolpec. Nato pa sem izbrisala tiste vrstice, ki niso imele nobene vrednosti v zadnjem stolpcu.
 
+***
+
 # Analiza in vizualizacija podatkov
 
-Najprej si oglejmo graf \ref{fig:graf1}, ki prikazuje število ločitev v različnih regijah.
-
-```{r graf1, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na regije'}
-ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
+```{r vizualizacija, echo=FALSE, results='hide', message=FALSE}
+source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 ```
 
-Vidimo, da je največ ločitev v Osrednjeslovenski regiji, kar pa je bilo pričakovano, glede na to, da je tam največ prebivalcev.
+Najprej si oglejmo graf \ref{fig:graf1}, ki prikazuje število ločitev v odstotkih v različnih regijah.
+
+```{r graf1, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na regije'}
+ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity")
+```
+
+Vidimo, da je največ ločitev v Osrednjeslovenski regiji, kar pa je bilo pričakovano, glede na to, da je tam največ prebivalcev. Te podatke sem prikazala še na naslednji sliki \ref{fig:zemljevid} v obliki zemljevida.
+
+```{r zemljevid, echo=FALSE, fig.align='center', fig.cap='Zemljevid porazdelitve razvez po regijah'}
+print(vsota.zemljevid)
+```
+
 
 Oglejmo si še dva grafa.
 
 * Graf \ref{fig:graf2} prikazuje porazdelitev števila razvez glede na trajanje zakonske zveze.
 
 ```{r graf2, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na trajanje zakonske zveze'}
-ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
+ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity") +
+  scale_fill_gradient(low="springgreen4", high="springgreen")
 ```
 
-Z grafa lahko razberemo, da se največ ločitev zgodi po 25 letih skupnega življenja. Zdi se mi precej nenavadno, da se par odloči raziti po tolikih skupnih letih. Morda je razlog naveličanost eden drugega ali pa so zaradi otrok vztrajajo pri zvezi, nato pa se ločijo, ko ti odrastejo.
+Z grafa lahko razberemo, da se največ ločitev zgodi po 25 letih skupnega življenja. Zdi se mi precej nenavadno, da se par odloči raziti po tolikih skupnih letih. Morda je razlog naveličanost eden drugega ali pa zaradi otrok vztrajajo pri zvezi, nato pa se ločijo, ko ti odrastejo.
 
 Druge najpogostejše ločitve pa so v obdobju od 5 do 9 let trajanja zakonske zveze. To dejstvo se mi zdi kar smiselno, saj po približno 5 letih zares spoznaš svojega partnerja in se odločiš o vztrajanju v zakonski zvezi. Ta rezultat sem pričakovala, da bo največji, ampak ni, je pa zelo blizu prvemu.
 
 * Graf \ref{fig:graf3} pa prikazuje število ločitev glede na število otrok.
 
 ```{r graf3, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na število otrok'}
-ggplot(otroci, aes(x=ST.OTROK, y=ODSTOTKI, color=ODSTOTKI)) + geom_point()
+ggplot(otroci, aes(x=ST.OTROK, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity") +
+  scale_fill_gradient(low="deeppink4", high="deeppink")
 ```
 
 Kot lahko vidimo, je največ ločitev v družinah brez otrok, sledijo družine enim otrokom,  dvemi, tremi in tako naprej. Iz tega lahko sklepam, da se verjetnost za ločitev zmanjšuje z naraščanjem števila otrok.
+
+***
+
+# Napredna analiza podatkov
+
