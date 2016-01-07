@@ -84,7 +84,8 @@ ODSTOTKI <- round(ST.RAZVEZ/sum(VSOTE)*100, 2)
 trajanje <- data.frame(ST.LET = factor(ST.LET, levels = ST.LET, ordered = TRUE), ST.RAZVEZ, ODSTOTKI)
 
 # Graf števila razvez glede na trajanje zakonske zveze
-ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity")
+ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity") +
+  scale_fill_gradient(low="springgreen4", high="springgreen")
 
 
 # TABELA HTML
@@ -117,4 +118,5 @@ ODSTOTKI <- round(ST.RAZVEZ/sum(VSOTE)*100, 2)
 otroci <- data.frame(ST.OTROK = factor(ST.OTROK, levels = ST.OTROK, ordered = TRUE), ST.RAZVEZ, ODSTOTKI)
 
 # Graf števila razvez glede na število otrok
-ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, fill=ODSTOTKI)) + geom_bar(stat = "identity")
+ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, fill=ODSTOTKI)) + geom_bar(stat = "identity")  +
+  scale_fill_gradient(low="deeppink4", high="deeppink")
