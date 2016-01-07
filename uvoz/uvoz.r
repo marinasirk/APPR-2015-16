@@ -120,3 +120,6 @@ otroci <- data.frame(ST.OTROK = factor(ST.OTROK, levels = ST.OTROK, ordered = TR
 # Graf števila razvez glede na število otrok
 ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, fill=ODSTOTKI)) + geom_bar(stat = "identity")  +
   scale_fill_gradient(low="deeppink4", high="deeppink")
+
+
+# Tabela razdelitve števila ločitev po letih - MANJKA!
