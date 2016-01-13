@@ -29,7 +29,7 @@ zemljevid2 <- pretvori.zemljevid(zemljevid)
 vsota.zemljevid <- ggplot() + geom_polygon(data = zemljevid2, aes(x=long, y=lat, group=group,
                                                          fill=razveze.odstotki),color = "grey30") +
   scale_fill_gradient(low="cyan", high="cyan4") +
-  guides(fill = guide_colorbar(title = "Porazdelitev števila razvez po regijah"))
+  guides(fill = guide_colorbar(title = "Porazdelitev števila\nrazvez po regijah"))
 
-# print(vsota.zemljevid)
+#print(vsota.zemljevid)
 
