@@ -2,11 +2,11 @@
 title: "ANALIZA ŠTEVILA ZAKONSKIH RAZVEZ V SLOVENIJI"
 author: "Marina Sirk"
 output:
-  html_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+  html_document: default
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -69,7 +69,7 @@ ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "ident
 Vidimo, da je največ ločitev v Osrednjeslovenski regiji, kar pa je bilo pričakovano, glede na to, da je tam največ prebivalcev. Te podatke sem prikazala še na naslednji sliki \ref{fig:zemljevid} v obliki zemljevida.
 
 ```{r zemljevid, echo=FALSE, fig.align='center', fig.cap='Zemljevid porazdelitve razvez po regijah'}
-print(vsota.zemljevid)
+vsota.zemljevid
 ```
 
 
