@@ -2,11 +2,11 @@
 title: "ANALIZA ŠTEVILA ZAKONSKIH RAZVEZ V SLOVENIJI"
 author: "Marina Sirk"
 output:
+  html_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
-  html_document: default
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -84,8 +84,7 @@ ggplot(trajanje, aes(x=ST.LET, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "id
 
 Z grafa lahko razberemo, da se največ ločitev zgodi po 25 letih skupnega življenja. Zdi se mi precej nenavadno, da se par odloči raziti po tolikih skupnih letih. Morda je razlog naveličanost eden drugega ali pa zaradi otrok vztrajajo pri zvezi, nato pa se ločijo, ko ti odrastejo. Prav gotovo pa vpliva na rezultat tudi to, da je porok vedno manj, zato je manj ločitev pri krajšem trajanju zveze.
 
-Druge najpogostejše ločitve pa so v obdobju od 5 do 9 let trajanja zakonske zveze. To dejstvo se mi zdi kar smiselno, saj po približno 5 letih zares spoznaš svojega partnerja in se odločiš o vztrajanju v zakonski zvezi. Ta rezultat sem pričakovala, da bo največji, ampak ni, je pa zelo blizu prvemu.
-
+Druge najpogostejše ločitve pa so v obdobju od 5 do 9 let trajanja zakonske zveze. To dejstvo se mi zdi kar smiselno, saj po približno 5 letih zares spoznaš svojega partnerja in se odločiš o vztrajanju v zakonski zvezi.
 * Graf \ref{fig:graf3} pa prikazuje število ločitev glede na število otrok.
 
 ```{r graf3, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na število otrok'}
@@ -103,9 +102,7 @@ Kot lahko vidimo, je največ ločitev v družinah brez otrok, sledijo družine e
 source("analiza/analiza.r", encoding = "UTF-8")
 ```
 
-Slika \ref{fig:graf} prikazuje kako se število razvez spreminja z leti.
-
-
+Slika \ref{fig:graf} prikazuje kako se število razvez spreminja z leti. Uporabila sem metodo najmanjših kvadratov, da sem prikazala gibanje števila ločitev. Opazimo, da število razvez sicer še vedno narašča, vendar vedno manj. Seveda ne gre zanemariti dejstva, da je tudi porok vedno manj in posledično manj ločitev.
 
 
 
