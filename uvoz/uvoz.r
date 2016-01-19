@@ -101,6 +101,7 @@ colnames(razveze2) <- c("REGIJA", "ST.OTROK", "LETO", "STEVILO.RAZVEZ")
 
 
 razveze2[,4] <- as.numeric(razveze2[,4])
+razveze2$LETO <- as.numeric(razveze2$LETO)
 
 razveze2 <- uredi(razveze2, 1, 1, 34)
 razveze2 <- uredi(razveze2, 1, 2, 6)
@@ -124,14 +125,5 @@ ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, fill=ODSTOTKI)) + geom_bar(stat = "id
 
 # Tabela razdelitve števila ločitev po letih
 
-LETO <- c("2008", "2009", "2010", "2011", "2012", "2013", "2014")
-
-STEVILO.RAZVEZ <- c(filter(razveze2, LETO=="2008")$STEVILO.RAZVEZ %>% sum(),
-                    filter(razveze2, LETO=="2009")$STEVILO.RAZVEZ %>% sum(),
-                    filter(razveze2, LETO=="2010")$STEVILO.RAZVEZ %>% sum(),
-                    filter(razveze2, LETO=="2011")$STEVILO.RAZVEZ %>% sum(),
-                    filter(razveze2, LETO=="2012")$STEVILO.RAZVEZ %>% sum(),
-                    filter(razveze2, LETO=="2013")$STEVILO.RAZVEZ %>% sum(),
-                    filter(razveze2, LETO=="2014")$STEVILO.RAZVEZ %>% sum() )
-
-razveze3 <- data.frame(LETO, STEVILO.RAZVEZ)
+razveze3 <- razveze2 %>% group_by(LETO) %>%
+  summarise(STEVILO.RAZVEZ = sum(STEVILO.RAZVEZ)) %>% data.frame()
