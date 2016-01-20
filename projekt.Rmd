@@ -2,11 +2,11 @@
 title: "ANALIZA ŠTEVILA ZAKONSKIH RAZVEZ V SLOVENIJI"
 author: "Marina Sirk"
 output:
-  html_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+  html_document: default
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -32,8 +32,8 @@ source("uvoz/uvoz.r", encoding = "UTF-8")
 Uvozila sem podatke o občinah v obliki CSV in HTML s statističnega urada. Poglejmo si začetka obeh uvoženih razpredelnic.
 
 ```{r razpredelnice, echo=FALSE}
-head(razveze1)
-head(razveze2)
+kable(head(razveze1))
+kable(head(razveze2))
 ```
 
 Tabeli imata štiri stolpce. Število razvez je v obeh razdeljeno glede na regije in leto, v prvi je odvisno še od trajanja zakonske zveze, v drugi pa od števila otrok.
