@@ -63,8 +63,8 @@ ODSTOTKI <- round(VSOTE/sum(VSOTE)*100, 2)
 vsota <- data.frame(REGIJE, VSOTE, ODSTOTKI)
 
 # Graf števila razvez glede na regije
-ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity")
-#barplot(vsota$VSOTE, beside=FALSE, main="Število razvez po regijah", horiz=TRUE, names.arg='REGIJE'))
+ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 
 # Skupno število ločitev glede na trajanje
 ST.LET <- c("do 1", "1", "2", "3", "4", "5-9", "10-14", "15-19", "20-24", "25 ali več")
