@@ -341,3 +341,11 @@ colnames(razvrscanje) <- c("regija",
                            "do 1 leta", "1 leto", "2 leti", "3 leta", "4 leta", "5-9 let", "10-14 let", "15-19 let", "20-24 let", "25 ali več let",
                            "brez otrok", "en otrok", "dva otroka", "trije otroci", "štirje ali več otrok")
 
+
+# RAZVRŠČANJE
+
+razvrscanje[,2] <- as.numeric(razvrscanje[,2])
+
+razvrscanje.norm <- scale(razvrscanje)
+k <- kmeans(razvrscanje.norm, 5)
+
