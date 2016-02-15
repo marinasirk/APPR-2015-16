@@ -128,3 +128,4 @@ ggplot(otroci, aes(y=ODSTOTKI, x=ST.OTROK, fill=ODSTOTKI)) + geom_bar(stat = "id
 
 razveze3 <- razveze2 %>% group_by(LETO) %>%
   summarise(STEVILO.RAZVEZ = sum(STEVILO.RAZVEZ)) %>% data.frame()
+
