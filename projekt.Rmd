@@ -2,11 +2,11 @@
 title: "ANALIZA ŠTEVILA ZAKONSKIH RAZVEZ V SLOVENIJI"
 author: "Marina Sirk"
 output:
-  html_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
+  html_document: default
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -21,7 +21,7 @@ source("lib/libraries.r", encoding = "UTF-8")
 V projektu bom analizirala podatke razvez zakonskih zvez od leta 2008 do 2014 glede na regije.Podatke sem dobila s Statističnega urada RS. Prva tabela (v obliki CSV) vsebuje podatke o trajanju zakonske zveze, druga tabela (v obliki HTML) pa o številu vzdrževanih otrok.
 Moj cilj je ugotoviti, kako na razveze vpliva trajanje zakonskih zvez in število otrok ter kje so ločitve najpogostejše.
 
-***
+
 
 # Obdelava, uvoz in čiščenje podatkov
 
@@ -52,7 +52,7 @@ Prva tabela ima 840 podatkov, druga pa 420.
 
 Da sem dobila obe tabeli v tidy obliki, sem morala najprej vsa prazna mesta v tabeli zapolniti. To sem naredila tako da sem najprej v prvem stolpcu kopirala manjkajoče vrednosti, enako sem naredila še za drugi stolpec. Nato pa sem izbrisala tiste vrstice, ki niso imele nobene vrednosti v zadnjem stolpcu.
 
-***
+
 
 # Analiza in vizualizacija podatkov
 
@@ -63,7 +63,8 @@ source("vizualizacija/vizualizacija.r", encoding = "UTF-8")
 Najprej si oglejmo graf \ref{fig:graf1}, ki prikazuje število ločitev v odstotkih v različnih regijah.
 
 ```{r graf1, echo=FALSE, fig.align='center', fig.cap='Graf števila razvez glede na regije'}
-ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity")
+ggplot(vsota, aes(x=REGIJE, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "identity") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
 
 Vidimo, da je največ ločitev v Osrednjeslovenski regiji, kar pa je bilo pričakovano, glede na to, da je tam največ prebivalcev. Te podatke sem prikazala še na naslednji sliki \ref{fig:zemljevid} v obliki zemljevida.
@@ -94,16 +95,26 @@ ggplot(otroci, aes(x=ST.OTROK, y=ODSTOTKI, fill=ODSTOTKI)) + geom_bar(stat = "id
 
 Kot lahko vidimo, je največ ločitev v družinah brez otrok, sledijo družine enim otrokom,  dvemi, tremi in tako naprej. Iz tega lahko sklepam, da se verjetnost za ločitev zmanjšuje z naraščanjem števila otrok.
 
-***
+
 
 # Napredna analiza podatkov
 
-```{r analiza, echo=FALSE}
+```{r analiza, echo=FALSE, results='hide', message=FALSE}
 source("analiza/analiza.r", encoding = "UTF-8")
 ```
 
-Slika \ref{fig:graf} prikazuje kako se število razvez spreminja z leti. Uporabila sem metodo najmanjših kvadratov, da sem prikazala gibanje števila ločitev. Opazimo, da število razvez sicer še vedno narašča, vendar vedno manj. Seveda ne gre zanemariti dejstva, da je tudi porok vedno manj in posledično manj ločitev.
+Prva slika \ref{fig:graf4} prikazuje, kako se število razvez spreminja z leti. 
 
+```{r graf4, echo=FALSE, fig.align='center'}
+print(g)
+```
 
+Uporabila sem metodo najmanjših kvadratov, da sem prikazala gibanje števila ločitev. Opazimo, da število razvez sicer še vedno narašča, vendar vedno manj. Seveda ne gre zanemariti dejstva, da je tudi porok vedno manj in posledično manj ločitev.
 
-***
+Naslednja slika pa predstavlja razvrstitev regij po petihskupinah, to pomeni, da so regije s podobnimi značilnostmi v istih skupinah.
+
+```{r graf5, echo=FALSE, fig.align='center'}
+ggplot(razvrscanje, aes(x=regija, y=skupine)) + geom_point(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
+```
+
