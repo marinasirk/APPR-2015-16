@@ -352,9 +352,8 @@ k <- kmeans(razvrscanje.norm, 5)
 # View(k$centers)
 
 skupine <- k$cluster
-ggplot(razvrscanje, aes(x=regija, y=skupine)) + geom_point(stat="identity") +
+ggplot(razvrscanje, aes(x=regija, y=skupine)) + geom_point(size=7, colour=skupine, shape=18) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
-
 
 
 
