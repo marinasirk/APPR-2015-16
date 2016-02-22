@@ -344,8 +344,15 @@ colnames(razvrscanje) <- c("regija",
 
 # RAZVRŠČANJE
 
-razvrscanje[,2] <- as.numeric(razvrscanje[,2])
-
-razvrscanje.norm <- scale(razvrscanje)
+razvrscanje.norm <- scale(razvrscanje[-1])          # izpustimo ime regije
+rownames(razvrscanje.norm) <- razvrscanje$regija        # stolpec regije nastavimo za imena vrstic
 k <- kmeans(razvrscanje.norm, 5)
+
+pairs(razvrscanje, col = k$kluster)
+
+
+
+
+
+
 
