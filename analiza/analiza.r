@@ -6,7 +6,6 @@ g <- ggplot(razveze3, aes(y=STEVILO.RAZVEZ, x=LETO)) + geom_point()
 
 g <- g + geom_smooth(method = "lm", formula = y ~ x)
 
-print(g)
 
 # Razvrščanje v skupine
 
@@ -348,10 +347,13 @@ razvrscanje.norm <- scale(razvrscanje[-1])          # izpustimo ime regije
 rownames(razvrscanje.norm) <- razvrscanje$regija        # stolpec regije nastavimo za imena vrstic
 k <- kmeans(razvrscanje.norm, 5)
 
-pairs(razvrscanje, col = k$kluster)
+# pairs(razvrscanje, col = k$cluster)
 
+# View(k$centers)
 
-
+skupine <- k$cluster
+ggplot(razvrscanje, aes(x=regija, y=skupine)) + geom_point(stat="identity") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 
 
 
