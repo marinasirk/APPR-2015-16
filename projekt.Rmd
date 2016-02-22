@@ -2,11 +2,11 @@
 title: "ANALIZA ŠTEVILA ZAKONSKIH RAZVEZ V SLOVENIJI"
 author: "Marina Sirk"
 output:
+  html_document: default
   pdf_document:
     includes:
       in_header: lib/styles.sty
     latex_engine: xelatex
-  html_document: default
 ---
 
 ```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
@@ -111,10 +111,10 @@ print(g)
 
 Uporabila sem metodo najmanjših kvadratov, da sem prikazala gibanje števila ločitev. Opazimo, da število razvez sicer še vedno narašča, vendar vedno manj. Seveda ne gre zanemariti dejstva, da je tudi porok vedno manj in posledično manj ločitev.
 
-Naslednja slika pa predstavlja razvrstitev regij po petihskupinah, to pomeni, da so regije s podobnimi značilnostmi v istih skupinah.
+Naslednja slika pa predstavlja razvrstitev regij po petih skupinah, to pomeni, da so regije s podobnimi značilnostmi v istih skupinah. Z grafa lahko razberemo, katere regije so med seboj podobne glede ločitev.
 
 ```{r graf5, echo=FALSE, fig.align='center'}
-ggplot(razvrscanje, aes(x=regija, y=skupine)) + geom_point(stat="identity") +
+ggplot(razvrscanje, aes(x=regija, y=skupine)) + geom_point(size=7, colour=skupine, shape=18) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5))
 ```
 
